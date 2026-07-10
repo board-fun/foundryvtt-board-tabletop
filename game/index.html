@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Board Phaser Game</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 100%; height: 100%; overflow: hidden; background: #fff8e0;
+        /* No rubber-band / pull-to-refresh, and no WebView text auto-inflation. */
+        overscroll-behavior: none;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      /* Phaser owns all gestures on the board; the browser must not zoom/scroll it. */
+      #game { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
+      #ui { position: absolute; inset: 0; pointer-events: none; }
+      #ui > * { pointer-events: auto; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DfNmV7BL.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/react-vendor-_foh5iaC.js">
+    <link rel="modulepreload" crossorigin href="./assets/phaser-DMjGVukU.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CpPfIpR3.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="ui"></div>
+  </body>
+</html>

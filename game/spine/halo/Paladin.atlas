@@ -1,0 +1,359 @@
+Paladin.png
+size:975,933
+filter:Linear,Linear
+pma:true
+scale:0.6
+1-Idle Slash/tex_vfx_SpiningSlashes_00
+bounds:501,408,192,235
+offsets:60,28,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_01
+bounds:501,408,192,235
+offsets:60,28,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_14
+bounds:501,408,192,235
+offsets:60,28,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_02
+bounds:584,602,184,247
+offsets:64,29,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_03
+bounds:2,492,185,248
+offsets:62,31,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_04
+bounds:690,205,201,243
+offsets:58,35,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_05
+bounds:210,60,201,243
+offsets:58,35,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_06
+bounds:2,293,213,197
+offsets:51,79,307,307
+1-Idle Slash/tex_vfx_SpiningSlashes_07
+bounds:363,648,219,187
+offsets:42,80,307,307
+1-Idle Slash/tex_vfx_SpiningSlashes_12
+bounds:2,86,206,205
+offsets:51,47,307,307
+1-Idle Slash/tex_vfx_SpiningSlashes_13
+bounds:455,4,202,217
+offsets:55,34,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_15
+bounds:738,408,192,235
+offsets:60,28,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_16
+bounds:252,460,186,247
+offsets:62,29,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_17
+bounds:674,2,201,248
+offsets:58,31,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_20
+bounds:473,208,215,198
+offsets:50,78,307,307
+Axe 1
+bounds:262,849,82,101
+offsets:0,2,82,103
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_671
+bounds:85,890,59,41
+offsets:103,132,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_672
+bounds:488,837,94,111
+offsets:86,104,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_673
+bounds:201,679,160,168
+offsets:66,73,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_689
+bounds:2,701,156,197
+offsets:54,15,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_690
+bounds:2,701,156,197
+offsets:54,15,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_691
+bounds:751,788,143,198
+offsets:68,15,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_692
+bounds:18,924,13,7
+offsets:73,83,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_693
+bounds:5,926,11,5
+offsets:76,83,307,307
+Complete Sword
+bounds:217,263,195,254
+offsets:24,60,241,325
+rotate:90
+Gem_Inner
+bounds:33,915,16,16
+offsets:0,0,16,17
+Gem_Shoulder
+bounds:51,911,20,32
+rotate:90
+Sholder armor 1
+bounds:146,859,72,114
+offsets:6,3,79,117
+rotate:90
+Sword 1
+bounds:365,838,93,121
+offsets:0,0,95,122
+rotate:90
+sparks/Comp 2_00000
+bounds:2,930,1,1
+sparks/Comp 2_00001
+bounds:2,930,1,1
+sparks/Comp 2_00018
+bounds:2,930,1,1
+sparks/Comp 2_00019
+bounds:2,930,1,1
+sparks/Comp 2_00020
+bounds:2,930,1,1
+sparks/Comp 2_00021
+bounds:2,930,1,1
+sparks/Comp 2_00022
+bounds:2,930,1,1
+sparks/Comp 2_00023
+bounds:2,930,1,1
+sparks/Comp 2_00024
+bounds:2,930,1,1
+sparks/Comp 2_00025
+bounds:2,930,1,1
+sparks/Comp 2_00006
+bounds:601,831,100,148
+offsets:284,269,749,749
+rotate:90
+sparks/Comp 2_00007
+bounds:601,831,100,148
+offsets:284,269,749,749
+rotate:90
+
+Paladin_2.png
+size:970,858
+filter:Linear,Linear
+pma:true
+scale:0.6
+1-Idle Slash/tex_vfx_SpiningSlashes_08
+bounds:2,651,215,205
+offsets:42,62,307,307
+1-Idle Slash/tex_vfx_SpiningSlashes_09
+bounds:463,222,212,219
+offsets:44,48,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_10
+bounds:225,439,210,219
+offsets:46,48,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_11
+bounds:446,438,211,211
+offsets:46,47,307,307
+1-Idle Slash/tex_vfx_SpiningSlashes_18
+bounds:659,436,210,243
+offsets:54,35,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_19
+bounds:218,226,210,243
+offsets:54,35,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_21
+bounds:685,648,221,208
+offsets:42,62,307,307
+1-Idle Slash/tex_vfx_SpiningSlashes_23
+bounds:259,6,214,225
+offsets:43,43,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_24
+bounds:486,6,214,225
+offsets:43,43,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_25
+bounds:684,222,212,218
+offsets:46,43,307,307
+rotate:90
+1-Idle Slash/tex_vfx_SpiningSlashes_26
+bounds:2,441,208,221
+offsets:50,34,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_674
+bounds:219,651,205,231
+offsets:48,46,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_675
+bounds:452,651,205,231
+offsets:48,46,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_687
+bounds:713,2,218,255
+offsets:37,16,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_688
+bounds:2,11,213,255
+offsets:42,15,307,307
+rotate:90
+sparks/Comp 2_00008
+bounds:2,228,211,214
+offsets:273,261,749,749
+rotate:90
+
+Paladin_3.png
+size:800,1000
+filter:Linear,Linear
+pma:true
+scale:0.6
+1-Idle Slash/tex_vfx_SpiningSlashes_22
+bounds:2,779,219,223
+offsets:41,48,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_676
+bounds:2,513,246,243
+offsets:33,34,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_677
+bounds:250,512,256,244
+offsets:26,30,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_678
+bounds:261,256,267,250
+offsets:18,27,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_679
+bounds:530,254,268,252
+offsets:18,25,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_680
+bounds:2,2,268,252
+offsets:18,25,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_684
+bounds:508,508,247,257
+offsets:27,17,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_685
+bounds:2,263,247,257
+offsets:27,17,307,307
+rotate:90
+Back/vfx_tex_IceCrystal_Explosion_Back_686
+bounds:513,757,241,257
+offsets:33,16,307,307
+rotate:90
+sparks/Comp 2_00005
+bounds:227,758,240,284
+offsets:246,240,749,749
+rotate:90
+
+Paladin_4.png
+size:810,988
+filter:Linear,Linear
+pma:true
+scale:0.6
+Back/vfx_tex_IceCrystal_Explosion_Back_681
+bounds:2,730,270,256
+offsets:18,23,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_682
+bounds:274,729,267,257
+offsets:19,20,307,307
+Back/vfx_tex_IceCrystal_Explosion_Back_683
+bounds:543,728,265,258
+offsets:21,18,307,307
+Inner ring
+bounds:2,436,291,314
+offsets:29,0,320,332
+rotate:90
+Outter ring
+bounds:2,2,382,367
+offsets:1,1,383,383
+sparks/Comp 2_00004
+bounds:318,371,355,384
+offsets:186,164,749,749
+rotate:90
+
+Paladin_5.png
+size:997,550
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00009
+bounds:578,114,417,434
+offsets:184,162,749,749
+sparks/Comp 2_00015
+bounds:2,2,574,546
+offsets:133,111,749,749
+
+Paladin_6.png
+size:577,558
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00014
+bounds:2,2,573,554
+offsets:130,115,749,749
+
+Paladin_7.png
+size:571,549
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00016
+bounds:2,2,567,545
+offsets:136,110,749,749
+
+Paladin_8.png
+size:992,571
+filter:Linear,Linear
+pma:true
+scale:0.6
+Glow
+bounds:540,118,450,451
+offsets:13,13,476,478
+sparks/Comp 2_00002
+bounds:2,2,536,567
+offsets:102,82,749,749
+
+Paladin_9.png
+size:561,541
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00017
+bounds:2,2,557,537
+offsets:144,115,749,749
+
+Paladin_10.png
+size:550,542
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00012
+bounds:2,2,546,538
+offsets:138,124,749,749
+sparks/Comp 2_00013
+bounds:2,2,546,538
+offsets:138,124,749,749
+
+Paladin_11.png
+size:998,483
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00003
+bounds:2,3,478,502
+offsets:136,115,749,749
+rotate:90
+sparks/Comp 2_00010
+bounds:506,2,479,490
+offsets:153,150,749,749
+rotate:90
+
+Paladin_12.png
+size:520,525
+filter:Linear,Linear
+pma:true
+scale:0.6
+sparks/Comp 2_00011
+bounds:2,2,516,521
+offsets:143,131,749,749

@@ -1,0 +1,1051 @@
+Artificer.png
+size:965,997
+filter:Linear,Linear
+pma:true
+scale:0.5
+Electric Bolt/sprites/sprite_001
+bounds:2,775,125,143
+offsets:56,87,256,512
+rotate:90
+Electric Bolt/sprites/sprite_002
+bounds:2,775,125,143
+offsets:56,87,256,512
+rotate:90
+Electric Bolt/sprites/sprite_003
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_004
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_007
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_008
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_011
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_012
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_015
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_016
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_019
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_020
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_023
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_024
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_027
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_028
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_031
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_032
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_035
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_036
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_037
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_038
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_041
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_042
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_045
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_046
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_049
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_050
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_053
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_054
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_055
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_056
+bounds:2,994,1,1
+electric burst/sprites/sprite_040
+bounds:2,994,1,1
+electric burst/sprites/sprite_041
+bounds:2,994,1,1
+electric burst/sprites/sprite_045
+bounds:2,994,1,1
+electric burst/sprites/sprite_046
+bounds:2,994,1,1
+lightning charge/sprites/sprite_011
+bounds:2,994,1,1
+lightning charge/sprites/sprite_012
+bounds:2,994,1,1
+lightning charge/sprites/sprite_013
+bounds:2,994,1,1
+lightning charge/sprites/sprite_016
+bounds:2,994,1,1
+lightning charge/sprites/sprite_017
+bounds:2,994,1,1
+lightning charge/sprites/sprite_018
+bounds:2,994,1,1
+lightning charge/sprites/sprite_021
+bounds:2,994,1,1
+lightning charge/sprites/sprite_022
+bounds:2,994,1,1
+lightning charge/sprites/sprite_023
+bounds:2,994,1,1
+lightning charge/sprites/sprite_029
+bounds:2,994,1,1
+lightning charge/sprites/sprite_030
+bounds:2,994,1,1
+lightning charge/sprites/sprite_034
+bounds:2,994,1,1
+lightning charge/sprites/sprite_035
+bounds:2,994,1,1
+lightning charge/sprites/sprite_039
+bounds:2,994,1,1
+lightning charge/sprites/sprite_040
+bounds:2,994,1,1
+lightning charge/sprites/sprite_041
+bounds:2,994,1,1
+lightning charge/sprites/sprite_042
+bounds:2,994,1,1
+lightning strike/sprites/sprite_034
+bounds:2,994,1,1
+lightning strike/sprites/sprite_035
+bounds:2,994,1,1
+lightning strike/sprites/sprite_039
+bounds:2,994,1,1
+lightning strike/sprites/sprite_040
+bounds:2,994,1,1
+lightning strike/sprites/sprite_044
+bounds:2,994,1,1
+lightning strike/sprites/sprite_045
+bounds:2,994,1,1
+lightning strike/sprites/sprite_049
+bounds:2,994,1,1
+lightning strike/sprites/sprite_050
+bounds:2,994,1,1
+lightning strike/sprites/sprite_054
+bounds:2,994,1,1
+lightning strike/sprites/sprite_055
+bounds:2,994,1,1
+lightning strike/sprites/sprite_056
+bounds:2,994,1,1
+lightning strike/sprites/sprite_057
+bounds:2,994,1,1
+lightning strike/sprites/sprite_058
+bounds:2,994,1,1
+lightning strike/sprites/sprite_061
+bounds:2,994,1,1
+lightning strike/sprites/sprite_062
+bounds:2,994,1,1
+lightning strike/sprites/sprite_063
+bounds:2,994,1,1
+lightning strike/sprites/sprite_066
+bounds:2,994,1,1
+lightning strike/sprites/sprite_067
+bounds:2,994,1,1
+lightning strike/sprites/sprite_068
+bounds:2,994,1,1
+lightning strike/sprites/sprite_071
+bounds:2,994,1,1
+lightning strike/sprites/sprite_072
+bounds:2,994,1,1
+lightning strike/sprites/sprite_073
+bounds:2,994,1,1
+lightning strike/sprites/sprite_076
+bounds:2,994,1,1
+lightning strike/sprites/sprite_077
+bounds:2,994,1,1
+lightning strike/sprites/sprite_078
+bounds:2,994,1,1
+lightning strike/sprites/sprite_081
+bounds:2,994,1,1
+Electric Bolt/sprites/sprite_005
+bounds:2,609,139,213
+offsets:68,86,256,512
+rotate:90
+Electric Bolt/sprites/sprite_006
+bounds:2,609,139,213
+offsets:68,86,256,512
+rotate:90
+Electric Bolt/sprites/sprite_009
+bounds:762,22,165,242
+offsets:55,96,256,512
+Electric Bolt/sprites/sprite_010
+bounds:762,22,165,242
+offsets:55,96,256,512
+Electric Bolt/sprites/sprite_043
+bounds:655,558,145,262
+offsets:64,179,256,512
+rotate:90
+Electric Bolt/sprites/sprite_044
+bounds:655,558,145,262
+offsets:64,179,256,512
+rotate:90
+Electric Bolt/sprites/sprite_047
+bounds:147,750,119,221
+offsets:78,202,256,512
+rotate:90
+Electric Bolt/sprites/sprite_048
+bounds:147,750,119,221
+offsets:78,202,256,512
+rotate:90
+Electric Bolt/sprites/sprite_051
+bounds:310,871,70,134
+offsets:97,275,256,512
+rotate:90
+Electric Bolt/sprites/sprite_052
+bounds:310,871,70,134
+offsets:97,275,256,512
+rotate:90
+Gear 1
+bounds:554,939,60,56
+Gear 2
+bounds:192,963,34,32
+Gear 3
+bounds:349,955,43,40
+Gear 4
+bounds:228,959,37,36
+Gear 5
+bounds:494,940,58,55
+Gear 6
+bounds:437,943,55,52
+Gem Gear 2
+bounds:5,972,24,23
+Gem Gear 3
+bounds:161,967,29,28
+Gem Gear 4
+bounds:31,970,26,25
+Gem Gear 5
+bounds:307,956,40,39
+Gem Gear 6
+bounds:267,958,38,37
+Gem gear 1
+bounds:394,955,41,40
+Hammer
+bounds:2,902,65,152
+rotate:90
+Tube 1
+bounds:616,936,141,59
+offsets:0,1,141,60
+Tube Glow 1
+bounds:110,969,49,26
+offsets:2,2,52,31
+Tube Glow 2
+bounds:59,970,49,25
+offsets:1,2,52,29
+lightning charge/sprites/sprite_001
+bounds:698,833,125,101
+offsets:195,17,512,512
+lightning charge/sprites/sprite_002
+bounds:698,833,125,101
+offsets:195,17,512,512
+lightning charge/sprites/sprite_003
+bounds:825,833,125,101
+offsets:195,17,512,512
+lightning charge/sprites/sprite_004
+bounds:673,705,290,126
+offsets:110,30,512,512
+lightning charge/sprites/sprite_005
+bounds:673,705,290,126
+offsets:110,30,512,512
+lightning charge/sprites/sprite_009
+bounds:434,103,326,161
+offsets:101,64,512,512
+lightning charge/sprites/sprite_010
+bounds:434,103,326,161
+offsets:101,64,512,512
+lightning strike/sprites/sprite_004
+bounds:2,321,142,431
+offsets:166,54,512,512
+rotate:90
+lightning strike/sprites/sprite_005
+bounds:2,321,142,431
+offsets:166,54,512,512
+rotate:90
+lightning strike/sprites/sprite_009
+bounds:2,167,152,430
+offsets:162,55,512,512
+rotate:90
+lightning strike/sprites/sprite_010
+bounds:2,167,152,430
+offsets:162,55,512,512
+rotate:90
+lightning strike/sprites/sprite_014
+bounds:2,465,137,431
+offsets:173,55,512,512
+rotate:90
+lightning strike/sprites/sprite_015
+bounds:2,465,137,431
+offsets:173,55,512,512
+rotate:90
+lightning strike/sprites/sprite_019
+bounds:217,604,129,436
+offsets:176,55,512,512
+rotate:90
+lightning strike/sprites/sprite_020
+bounds:217,604,129,436
+offsets:176,55,512,512
+rotate:90
+lightning strike/sprites/sprite_024
+bounds:435,416,140,433
+offsets:171,55,512,512
+rotate:90
+lightning strike/sprites/sprite_025
+bounds:435,416,140,433
+offsets:171,55,512,512
+rotate:90
+lightning strike/sprites/sprite_029
+bounds:435,266,148,434
+offsets:174,53,512,512
+rotate:90
+lightning strike/sprites/sprite_030
+bounds:435,266,148,434
+offsets:174,53,512,512
+rotate:90
+lightning strike/sprites/sprite_069
+bounds:2,2,163,328
+offsets:194,135,512,512
+rotate:90
+lightning strike/sprites/sprite_070
+bounds:2,2,163,328
+offsets:194,135,512,512
+rotate:90
+lightning strike/sprites/sprite_074
+bounds:370,735,113,301
+offsets:204,163,512,512
+rotate:90
+lightning strike/sprites/sprite_075
+bounds:370,735,113,301
+offsets:204,163,512,512
+rotate:90
+lightning strike/sprites/sprite_079
+bounds:446,850,84,250
+offsets:223,214,512,512
+rotate:90
+lightning strike/sprites/sprite_080
+bounds:446,850,84,250
+offsets:223,214,512,512
+rotate:90
+tube 2
+bounds:759,936,141,59
+offsets:0,0,141,60
+wrench
+bounds:156,889,65,152
+rotate:90
+
+Artificer_2.png
+size:980,849
+filter:Linear,Linear
+pma:true
+scale:0.5
+Electric Bolt/sprites/sprite_013
+bounds:806,427,172,257
+offsets:45,106,256,512
+Electric Bolt/sprites/sprite_014
+bounds:806,427,172,257
+offsets:45,106,256,512
+Electric Bolt/sprites/sprite_017
+bounds:666,176,170,311
+offsets:41,111,256,512
+rotate:90
+Electric Bolt/sprites/sprite_018
+bounds:666,176,170,311
+offsets:41,111,256,512
+rotate:90
+Electric Bolt/sprites/sprite_021
+bounds:2,178,168,345
+offsets:37,93,256,512
+rotate:90
+Electric Bolt/sprites/sprite_022
+bounds:2,178,168,345
+offsets:37,93,256,512
+rotate:90
+Electric Bolt/sprites/sprite_039
+bounds:2,518,166,322
+offsets:53,127,256,512
+rotate:90
+Electric Bolt/sprites/sprite_040
+bounds:2,518,166,322
+offsets:53,127,256,512
+rotate:90
+lightning charge/sprites/sprite_006
+bounds:2,348,315,168
+offsets:108,45,512,512
+lightning charge/sprites/sprite_007
+bounds:2,348,315,168
+offsets:108,45,512,512
+lightning charge/sprites/sprite_008
+bounds:349,178,315,168
+offsets:108,45,512,512
+lightning strike/sprites/sprite_001
+bounds:2,4,172,481
+offsets:164,6,512,512
+rotate:90
+lightning strike/sprites/sprite_002
+bounds:2,4,172,481
+offsets:164,6,512,512
+rotate:90
+lightning strike/sprites/sprite_003
+bounds:485,2,172,481
+offsets:164,6,512,512
+rotate:90
+lightning strike/sprites/sprite_006
+bounds:2,686,161,480
+offsets:170,6,512,512
+rotate:90
+lightning strike/sprites/sprite_007
+bounds:2,686,161,480
+offsets:170,6,512,512
+rotate:90
+lightning strike/sprites/sprite_008
+bounds:484,686,161,480
+offsets:170,6,512,512
+rotate:90
+lightning strike/sprites/sprite_011
+bounds:326,517,167,478
+offsets:180,7,512,512
+rotate:90
+lightning strike/sprites/sprite_012
+bounds:326,517,167,478
+offsets:180,7,512,512
+rotate:90
+lightning strike/sprites/sprite_013
+bounds:319,348,167,478
+offsets:180,7,512,512
+rotate:90
+
+Artificer_3.png
+size:942,878
+filter:Linear,Linear
+pma:true
+scale:0.5
+Electric Bolt/sprites/sprite_025
+bounds:2,698,178,340
+offsets:32,97,256,512
+rotate:90
+Electric Bolt/sprites/sprite_026
+bounds:2,698,178,340
+offsets:32,97,256,512
+rotate:90
+Electric Bolt/sprites/sprite_029
+bounds:2,330,183,332
+offsets:33,104,256,512
+rotate:90
+Electric Bolt/sprites/sprite_030
+bounds:2,330,183,332
+offsets:33,104,256,512
+rotate:90
+Electric Bolt/sprites/sprite_033
+bounds:336,260,194,332
+offsets:28,108,256,512
+rotate:90
+Electric Bolt/sprites/sprite_034
+bounds:336,260,194,332
+offsets:28,108,256,512
+rotate:90
+electric burst/sprites/sprite_001
+bounds:670,201,253,270
+offsets:151,94,512,512
+rotate:90
+electric burst/sprites/sprite_002
+bounds:670,201,253,270
+offsets:151,94,512,512
+rotate:90
+inner circle
+bounds:685,639,237,237
+lightning strike/sprites/sprite_041
+bounds:2,515,181,443
+offsets:177,12,512,512
+rotate:90
+lightning strike/sprites/sprite_042
+bounds:2,515,181,443
+offsets:177,12,512,512
+rotate:90
+lightning strike/sprites/sprite_043
+bounds:447,456,181,443
+offsets:177,12,512,512
+rotate:90
+lightning strike/sprites/sprite_051
+bounds:389,2,197,456
+offsets:174,10,512,512
+rotate:90
+lightning strike/sprites/sprite_052
+bounds:389,2,197,456
+offsets:174,10,512,512
+rotate:90
+lightning strike/sprites/sprite_059
+bounds:2,62,196,385
+offsets:182,76,512,512
+rotate:90
+lightning strike/sprites/sprite_060
+bounds:2,62,196,385
+offsets:182,76,512,512
+rotate:90
+lightning strike/sprites/sprite_064
+bounds:344,698,178,339
+offsets:189,122,512,512
+rotate:90
+lightning strike/sprites/sprite_065
+bounds:344,698,178,339
+offsets:189,122,512,512
+rotate:90
+
+Artificer_4.png
+size:921,838
+filter:Linear,Linear
+pma:true
+scale:0.5
+lightning strike/sprites/sprite_016
+bounds:439,215,211,480
+offsets:141,6,512,512
+rotate:90
+lightning strike/sprites/sprite_017
+bounds:439,215,211,480
+offsets:141,6,512,512
+rotate:90
+lightning strike/sprites/sprite_018
+bounds:435,2,211,480
+offsets:141,6,512,512
+rotate:90
+lightning strike/sprites/sprite_031
+bounds:2,4,223,431
+offsets:156,6,512,512
+rotate:90
+lightning strike/sprites/sprite_032
+bounds:2,4,223,431
+offsets:156,6,512,512
+rotate:90
+lightning strike/sprites/sprite_036
+bounds:451,428,207,435
+offsets:175,7,512,512
+rotate:90
+lightning strike/sprites/sprite_037
+bounds:451,428,207,435
+offsets:175,7,512,512
+rotate:90
+lightning strike/sprites/sprite_038
+bounds:2,229,207,435
+offsets:175,7,512,512
+rotate:90
+lightning strike/sprites/sprite_046
+bounds:460,637,199,447
+offsets:173,10,512,512
+rotate:90
+lightning strike/sprites/sprite_047
+bounds:460,637,199,447
+offsets:173,10,512,512
+rotate:90
+lightning strike/sprites/sprite_048
+bounds:2,438,199,447
+offsets:173,10,512,512
+rotate:90
+lightning strike/sprites/sprite_053
+bounds:2,639,197,456
+offsets:174,10,512,512
+rotate:90
+
+Artificer_5.png
+size:960,983
+filter:Linear,Linear
+pma:true
+scale:0.5
+lightning charge/sprites/sprite_014
+bounds:484,257,331,268
+offsets:97,76,512,512
+lightning charge/sprites/sprite_015
+bounds:484,257,331,268
+offsets:97,76,512,512
+lightning charge/sprites/sprite_019
+bounds:2,2,324,281
+offsets:100,90,512,512
+lightning charge/sprites/sprite_020
+bounds:2,2,324,281
+offsets:100,90,512,512
+lightning strike/sprites/sprite_021
+bounds:435,527,240,480
+offsets:134,6,512,512
+rotate:90
+lightning strike/sprites/sprite_022
+bounds:435,527,240,480
+offsets:134,6,512,512
+rotate:90
+lightning strike/sprites/sprite_023
+bounds:2,285,240,480
+offsets:134,6,512,512
+rotate:90
+lightning strike/sprites/sprite_026
+bounds:2,769,212,477
+offsets:159,6,512,512
+rotate:90
+lightning strike/sprites/sprite_027
+bounds:2,769,212,477
+offsets:159,6,512,512
+rotate:90
+lightning strike/sprites/sprite_028
+bounds:481,769,212,477
+offsets:159,6,512,512
+rotate:90
+lightning strike/sprites/sprite_033
+bounds:2,544,223,431
+offsets:156,6,512,512
+rotate:90
+
+Artificer_6.png
+size:993,937
+filter:Linear,Linear
+pma:true
+scale:0.5
+Outter
+bounds:2,332,308,302
+offsets:0,3,308,318
+electric aura/sprites/sprite_037
+bounds:387,2,322,383
+offsets:95,45,512,512
+rotate:90
+electric aura/sprites/sprite_038
+bounds:2,14,316,383
+offsets:98,45,512,512
+rotate:90
+electric burst/sprites/sprite_003
+bounds:312,332,332,302
+offsets:72,96,512,512
+electric burst/sprites/sprite_004
+bounds:312,332,332,302
+offsets:72,96,512,512
+electric burst/sprites/sprite_005
+bounds:646,326,327,307
+offsets:72,91,512,512
+electric burst/sprites/sprite_006
+bounds:646,326,327,307
+offsets:72,91,512,512
+lightning charge/sprites/sprite_031
+bounds:2,636,336,299
+offsets:105,197,512,512
+lightning charge/sprites/sprite_032
+bounds:2,636,336,299
+offsets:105,197,512,512
+lightning charge/sprites/sprite_033
+bounds:340,636,336,299
+offsets:105,197,512,512
+lightning charge/sprites/sprite_036
+bounds:678,635,313,300
+offsets:108,200,512,512
+lightning charge/sprites/sprite_037
+bounds:678,635,313,300
+offsets:108,200,512,512
+lightning charge/sprites/sprite_038
+bounds:678,635,313,300
+offsets:108,200,512,512
+
+Artificer_7.png
+size:725,1000
+filter:Linear,Linear
+pma:true
+scale:0.5
+Great Gear
+bounds:388,335,333,335
+offsets:1,0,334,336
+rotate:90
+electric aura/sprites/sprite_031
+bounds:2,672,326,370
+offsets:93,71,512,512
+rotate:90
+electric aura/sprites/sprite_032
+bounds:2,2,334,372
+offsets:89,70,512,512
+rotate:90
+electric aura/sprites/sprite_036
+bounds:2,338,330,384
+offsets:91,45,512,512
+rotate:90
+lightning charge/sprites/sprite_024
+bounds:374,670,328,333
+offsets:100,96,512,512
+rotate:90
+lightning charge/sprites/sprite_025
+bounds:374,670,328,333
+offsets:100,96,512,512
+rotate:90
+
+Artificer_8.png
+size:725,682
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_004
+bounds:366,343,337,357
+offsets:84,77,512,512
+rotate:90
+electric aura/sprites/sprite_005
+bounds:2,2,340,348
+offsets:83,80,512,512
+rotate:90
+electric aura/sprites/sprite_009
+bounds:2,344,362,336
+offsets:72,88,512,512
+lightning charge/sprites/sprite_026
+bounds:352,2,339,365
+offsets:104,108,512,512
+rotate:90
+lightning charge/sprites/sprite_027
+bounds:352,2,339,365
+offsets:104,108,512,512
+rotate:90
+
+Artificer_9.png
+size:735,688
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_010
+bounds:369,346,364,340
+offsets:72,86,512,512
+electric aura/sprites/sprite_020
+bounds:355,2,366,342
+offsets:73,85,512,512
+electric burst/sprites/sprite_007
+bounds:2,3,342,351
+offsets:76,64,512,512
+rotate:90
+electric burst/sprites/sprite_008
+bounds:2,3,342,351
+offsets:76,64,512,512
+rotate:90
+lightning charge/sprites/sprite_028
+bounds:2,347,339,365
+offsets:104,108,512,512
+rotate:90
+
+Artificer_10.png
+size:760,703
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_019
+bounds:2,9,356,348
+offsets:78,82,512,512
+electric aura/sprites/sprite_024
+bounds:372,354,386,347
+offsets:63,83,512,512
+electric aura/sprites/sprite_025
+bounds:360,2,376,350
+offsets:68,81,512,512
+electric aura/sprites/sprite_033
+bounds:2,359,342,368
+offsets:85,72,512,512
+rotate:90
+
+Artificer_11.png
+size:783,726
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_014
+bounds:366,369,355,356
+offsets:76,78,512,512
+rotate:90
+electric aura/sprites/sprite_015
+bounds:2,371,353,362
+offsets:77,75,512,512
+rotate:90
+electric aura/sprites/sprite_016
+bounds:2,3,364,389
+offsets:82,49,512,512
+rotate:90
+electric aura/sprites/sprite_017
+bounds:393,2,365,388
+offsets:81,49,512,512
+rotate:90
+
+Artificer_12.png
+size:780,751
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_011
+bounds:384,2,373,386
+offsets:75,42,512,512
+rotate:90
+electric aura/sprites/sprite_013
+bounds:389,377,372,389
+offsets:76,42,512,512
+rotate:90
+electric aura/sprites/sprite_018
+bounds:2,383,366,385
+offsets:80,49,512,512
+rotate:90
+electric aura/sprites/sprite_021
+bounds:2,6,380,375
+offsets:67,54,512,512
+
+Artificer_13.png
+size:779,757
+filter:Linear,Linear
+pma:true
+scale:0.5
+Glow
+bounds:2,2,378,381
+offsets:1,6,391,397
+rotate:90
+electric aura/sprites/sprite_012
+bounds:2,382,373,386
+offsets:75,42,512,512
+rotate:90
+electric aura/sprites/sprite_022
+bounds:390,380,387,375
+offsets:63,54,512,512
+electric aura/sprites/sprite_023
+bounds:385,2,390,376
+offsets:61,54,512,512
+
+Artificer_14.png
+size:793,768
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_026
+bounds:405,385,381,386
+offsets:60,57,512,512
+rotate:90
+electric aura/sprites/sprite_027
+bounds:2,5,381,386
+offsets:60,57,512,512
+rotate:90
+electric aura/sprites/sprite_028
+bounds:390,2,381,386
+offsets:60,57,512,512
+rotate:90
+electric burst/sprites/sprite_009
+bounds:2,388,378,401
+offsets:76,41,512,512
+rotate:90
+electric burst/sprites/sprite_010
+bounds:2,388,378,401
+offsets:76,41,512,512
+rotate:90
+
+Artificer_15.png
+size:830,779
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_006
+bounds:2,392,385,404
+offsets:69,38,512,512
+rotate:90
+electric aura/sprites/sprite_007
+bounds:408,392,385,404
+offsets:69,38,512,512
+rotate:90
+electric aura/sprites/sprite_008
+bounds:2,5,385,404
+offsets:69,38,512,512
+rotate:90
+electric aura/sprites/sprite_029
+bounds:408,2,420,388
+offsets:50,61,512,512
+
+Artificer_16.png
+size:890,804
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_001
+bounds:2,7,405,410
+offsets:57,39,512,512
+rotate:90
+electric aura/sprites/sprite_030
+bounds:2,414,420,388
+offsets:50,61,512,512
+electric aura/sprites/sprite_034
+bounds:414,2,433,404
+offsets:43,46,512,512
+electric burst/sprites/sprite_034
+bounds:424,408,464,394
+offsets:6,98,512,512
+
+Artificer_17.png
+size:887,817
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric aura/sprites/sprite_002
+bounds:437,410,405,409
+offsets:57,39,512,512
+rotate:90
+electric aura/sprites/sprite_003
+bounds:2,4,405,406
+offsets:57,39,512,512
+rotate:90
+electric aura/sprites/sprite_035
+bounds:2,411,433,404
+offsets:43,46,512,512
+electric burst/sprites/sprite_032
+bounds:410,2,475,406
+offsets:6,96,512,512
+
+Artificer_18.png
+size:877,843
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_011
+bounds:442,426,415,433
+offsets:51,27,512,512
+rotate:90
+electric burst/sprites/sprite_012
+bounds:2,12,415,433
+offsets:51,27,512,512
+rotate:90
+electric burst/sprites/sprite_023
+bounds:437,2,423,422
+offsets:32,55,512,512
+electric burst/sprites/sprite_039
+bounds:2,429,412,438
+offsets:61,36,512,512
+rotate:90
+
+Artificer_19.png
+size:939,870
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_013
+bounds:445,436,457,432
+offsets:12,27,512,512
+electric burst/sprites/sprite_014
+bounds:2,2,457,432
+offsets:12,27,512,512
+electric burst/sprites/sprite_024
+bounds:2,437,441,431
+offsets:32,46,512,512
+electric burst/sprites/sprite_047
+bounds:461,2,432,476
+offsets:51,9,512,512
+rotate:90
+electric burst/sprites/sprite_048
+bounds:461,2,432,476
+offsets:51,9,512,512
+rotate:90
+electric burst/sprites/sprite_049
+bounds:461,2,432,476
+offsets:51,9,512,512
+rotate:90
+
+Artificer_20.png
+size:931,877
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_036
+bounds:2,2,438,483
+offsets:48,22,512,512
+rotate:90
+electric burst/sprites/sprite_037
+bounds:487,2,442,438
+offsets:31,36,512,512
+electric burst/sprites/sprite_038
+bounds:487,2,442,438
+offsets:31,36,512,512
+electric burst/sprites/sprite_042
+bounds:2,442,433,453
+offsets:48,25,512,512
+rotate:90
+electric burst/sprites/sprite_043
+bounds:2,442,433,453
+offsets:48,25,512,512
+rotate:90
+electric burst/sprites/sprite_044
+bounds:457,442,433,453
+offsets:48,25,512,512
+rotate:90
+
+Artificer_21.png
+size:940,900
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_015
+bounds:2,2,466,452
+offsets:6,22,512,512
+electric burst/sprites/sprite_016
+bounds:2,2,466,452
+offsets:6,22,512,512
+electric burst/sprites/sprite_021
+bounds:2,456,442,446
+offsets:15,24,512,512
+rotate:90
+electric burst/sprites/sprite_022
+bounds:450,456,442,446
+offsets:15,24,512,512
+rotate:90
+electric burst/sprites/sprite_035
+bounds:470,2,468,452
+offsets:6,40,512,512
+
+Artificer_22.png
+size:964,933
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_017
+bounds:2,7,475,464
+offsets:0,16,512,512
+electric burst/sprites/sprite_018
+bounds:479,2,475,464
+offsets:0,16,512,512
+electric burst/sprites/sprite_025
+bounds:497,468,463,465
+offsets:6,37,512,512
+rotate:90
+electric burst/sprites/sprite_033
+bounds:2,473,458,493
+offsets:40,13,512,512
+rotate:90
+
+Artificer_23.png
+size:994,963
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_019
+bounds:498,487,491,474
+offsets:0,13,512,512
+electric burst/sprites/sprite_020
+bounds:2,9,497,476
+offsets:0,13,512,512
+electric burst/sprites/sprite_026
+bounds:501,2,483,491
+offsets:6,15,512,512
+rotate:90
+electric burst/sprites/sprite_030
+bounds:2,488,473,494
+offsets:25,12,512,512
+rotate:90
+electric burst/sprites/sprite_031
+bounds:2,488,473,494
+offsets:25,12,512,512
+rotate:90
+
+Artificer_24.png
+size:991,979
+filter:Linear,Linear
+pma:true
+scale:0.5
+electric burst/sprites/sprite_027
+bounds:2,2,483,491
+offsets:6,15,512,512
+rotate:90
+electric burst/sprites/sprite_028
+bounds:501,481,488,496
+offsets:6,10,512,512
+electric burst/sprites/sprite_029
+bounds:2,487,490,497
+offsets:6,9,512,512
+rotate:90

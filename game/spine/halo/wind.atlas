@@ -1,0 +1,597 @@
+WIND.png
+size:990,975
+filter:Linear,Linear
+pma:true
+scale:0.5
+Slash B/vfx_tex_Slash_B_00
+bounds:321,947,26,32
+offsets:116,58,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_01
+bounds:355,947,26,32
+offsets:116,58,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_02
+bounds:533,937,36,60
+offsets:109,30,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_03
+bounds:506,769,66,68
+offsets:82,21,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_04
+bounds:2,734,72,68
+offsets:75,21,184,184
+Slash B/vfx_tex_Slash_B_05
+bounds:2,584,77,93
+offsets:69,21,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_06
+bounds:97,577,77,93
+offsets:69,21,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_07
+bounds:509,545,79,107
+offsets:67,20,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_08
+bounds:618,542,80,123
+offsets:65,19,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_09
+bounds:268,472,81,126
+offsets:63,20,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_10
+bounds:743,538,80,130
+offsets:62,21,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_11
+bounds:2,495,80,130
+offsets:62,21,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_12
+bounds:396,462,81,130
+offsets:61,22,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_13
+bounds:794,440,82,131
+offsets:60,23,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_14
+bounds:258,387,83,131
+offsets:59,24,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_15
+bounds:391,377,83,130
+offsets:59,25,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_16
+bounds:523,374,83,130
+offsets:59,25,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_17
+bounds:528,459,81,131
+offsets:58,25,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_18
+bounds:134,489,80,132
+offsets:58,25,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_19
+bounds:661,455,81,131
+offsets:57,26,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_20
+bounds:2,411,82,126
+offsets:56,32,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_21
+bounds:130,405,82,126
+offsets:56,32,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_22
+bounds:210,793,53,125
+offsets:56,33,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_23
+bounds:90,799,51,118
+offsets:56,41,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_24
+bounds:583,833,50,118
+offsets:56,42,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_25
+bounds:703,830,50,117
+offsets:56,43,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_26
+bounds:822,830,50,117
+offsets:56,43,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_27
+bounds:464,837,49,117
+offsets:56,43,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_28
+bounds:470,888,47,111
+offsets:59,49,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_29
+bounds:583,886,47,108
+offsets:59,53,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_30
+bounds:840,931,42,94
+offsets:64,67,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_31
+bounds:103,905,42,94
+offsets:64,67,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_32
+bounds:701,934,39,93
+offsets:67,68,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_33
+bounds:157,949,24,80
+offsets:68,81,184,184
+rotate:90
+Slash B/vfx_tex_Slash_B_34
+bounds:239,948,25,80
+offsets:68,81,184,184
+rotate:90
+Slash/vfx_tex_Slash_00
+bounds:11,968,5,12
+offsets:34,51,184,184
+rotate:90
+Slash/vfx_tex_Slash_01
+bounds:25,968,5,12
+offsets:34,51,184,184
+rotate:90
+Slash/vfx_tex_Slash_02
+bounds:136,956,17,19
+offsets:34,44,184,184
+rotate:90
+Slash/vfx_tex_Slash_03
+bounds:389,945,28,31
+offsets:35,42,184,184
+rotate:90
+Slash/vfx_tex_Slash_04
+bounds:471,938,35,60
+offsets:35,41,184,184
+rotate:90
+Slash/vfx_tex_Slash_05
+bounds:199,902,44,91
+offsets:35,40,184,184
+rotate:90
+Slash/vfx_tex_Slash_06
+bounds:292,901,44,91
+offsets:35,40,184,184
+rotate:90
+Slash/vfx_tex_Slash_07
+bounds:365,844,49,97
+offsets:35,39,184,184
+rotate:90
+Slash/vfx_tex_Slash_08
+bounds:402,773,62,102
+offsets:35,39,184,184
+rotate:90
+Slash/vfx_tex_Slash_09
+bounds:398,706,65,103
+offsets:36,39,184,184
+rotate:90
+Slash/vfx_tex_Slash_10
+bounds:840,694,69,103
+offsets:36,40,184,184
+rotate:90
+Slash/vfx_tex_Slash_11
+bounds:2,663,69,103
+offsets:36,40,184,184
+rotate:90
+Slash/vfx_tex_Slash_12
+bounds:317,634,70,102
+offsets:37,42,184,184
+rotate:90
+Slash/vfx_tex_Slash_13
+bounds:421,631,70,102
+offsets:38,43,184,184
+rotate:90
+Slash/vfx_tex_Slash_14
+bounds:525,626,70,102
+offsets:39,44,184,184
+rotate:90
+Slash/vfx_tex_Slash_15
+bounds:107,656,69,103
+offsets:41,44,184,184
+rotate:90
+Slash/vfx_tex_Slash_16
+bounds:212,645,69,103
+offsets:41,44,184,184
+rotate:90
+Slash/vfx_tex_Slash_17
+bounds:735,697,66,103
+offsets:44,45,184,184
+rotate:90
+Slash/vfx_tex_Slash_18
+bounds:191,727,64,103
+offsets:46,45,184,184
+rotate:90
+Slash/vfx_tex_Slash_19
+bounds:670,765,63,102
+offsets:48,46,184,184
+rotate:90
+Slash/vfx_tex_Slash_20
+bounds:774,765,63,102
+offsets:49,46,184,184
+rotate:90
+Slash/vfx_tex_Slash_21
+bounds:878,765,63,102
+offsets:49,46,184,184
+rotate:90
+Slash/vfx_tex_Slash_22
+bounds:576,769,62,92
+offsets:50,57,184,184
+rotate:90
+Slash/vfx_tex_Slash_23
+bounds:2,863,48,86
+offsets:64,63,184,184
+rotate:90
+Slash/vfx_tex_Slash_24
+bounds:90,855,48,84
+offsets:64,65,184,184
+rotate:90
+Slash/vfx_tex_Slash_25
+bounds:693,885,47,85
+offsets:65,65,184,184
+rotate:90
+Slash/vfx_tex_Slash_26
+bounds:780,882,47,85
+offsets:65,65,184,184
+rotate:90
+Slash/vfx_tex_Slash_27
+bounds:52,913,44,49
+offsets:68,101,184,184
+rotate:90
+Slash/vfx_tex_Slash_28
+bounds:2,917,43,48
+offsets:69,102,184,184
+rotate:90
+Slash/vfx_tex_Slash_29
+bounds:796,933,42,40
+offsets:69,110,184,184
+Slash/vfx_tex_Slash_30
+bounds:39,962,22,11
+offsets:82,138,184,184
+Slash/vfx_tex_Slash_31
+bounds:39,962,22,11
+offsets:82,138,184,184
+Slash/vfx_tex_Slash_32
+bounds:5,970,4,3
+offsets:99,146,184,184
+Whirl/vfx_tex_Whirl_00
+bounds:595,935,51,38
+offsets:64,74,184,184
+Whirl/vfx_tex_Whirl_01
+bounds:648,935,51,38
+offsets:64,74,184,184
+Whirl/vfx_tex_Whirl_02
+bounds:2,804,57,86
+offsets:61,50,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_03
+bounds:887,616,76,101
+offsets:52,42,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_04
+bounds:875,524,90,101
+offsets:44,42,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_05
+bounds:767,339,99,101
+offsets:39,42,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_06
+bounds:870,339,99,101
+offsets:39,42,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_07
+bounds:2,308,106,101
+offsets:36,42,184,184
+Whirl/vfx_tex_Whirl_08
+bounds:110,292,111,115
+offsets:33,34,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_09
+bounds:379,262,113,121
+offsets:32,31,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_10
+bounds:655,222,115,129
+offsets:31,27,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_11
+bounds:786,222,115,129
+offsets:31,27,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_12
+bounds:2,173,117,132
+offsets:30,26,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_13
+bounds:136,158,119,134
+offsets:29,25,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_14
+bounds:272,139,121,136
+offsets:28,24,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_15
+bounds:562,96,124,137
+offsets:27,23,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_16
+bounds:701,96,124,137
+offsets:27,23,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_17
+bounds:840,95,125,139
+offsets:27,22,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_18
+bounds:136,17,127,139
+offsets:26,22,184,184
+Whirl/vfx_tex_Whirl_19
+bounds:265,9,128,141
+offsets:26,21,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_20
+bounds:408,2,131,142
+offsets:24,21,184,184
+rotate:90
+explosion/explosion_00001
+bounds:2,972,1,1
+smooke/Comp 2_00001
+bounds:2,972,1,1
+smooke/Comp 2_00021
+bounds:2,972,1,1
+vfx_2/vfx_2_00001
+bounds:2,972,1,1
+explosion/explosion_00002
+bounds:227,279,150,106
+offsets:23,49,195,195
+explosion/explosion_00003
+bounds:289,848,74,51
+offsets:62,77,195,195
+explosion/explosion_00004
+bounds:422,941,47,32
+offsets:73,84,195,195
+explosion/explosion_00005
+bounds:95,959,39,14
+offsets:78,93,195,195
+explosion/explosion_00006
+bounds:176,852,111,48
+offsets:42,74,195,195
+explosion/explosion_00007
+bounds:176,852,111,48
+offsets:42,74,195,195
+explosion/explosion_00008
+bounds:502,260,151,112
+offsets:22,39,195,195
+explosion/explosion_00016
+bounds:410,135,150,123
+offsets:25,37,195,195
+explosion/explosion_00017
+bounds:629,624,142,71
+offsets:29,59,195,195
+explosion/explosion_00018
+bounds:867,882,80,47
+offsets:56,74,195,195
+explosion/explosion_00019
+bounds:867,882,80,47
+offsets:56,74,195,195
+smooke/Comp 2_00002
+bounds:337,782,60,63
+offsets:69,63,195,195
+rotate:90
+smooke/Comp 2_00003
+bounds:655,363,90,110
+offsets:54,40,195,195
+rotate:90
+smooke/Comp 2_00004
+bounds:655,363,90,110
+offsets:54,40,195,195
+rotate:90
+smooke/Comp 2_00005
+bounds:2,34,132,137
+offsets:33,27,195,195
+smooke/Comp 2_00006
+bounds:2,34,132,137
+offsets:33,27,195,195
+smooke/Comp 2_00007
+bounds:2,34,132,137
+offsets:33,27,195,195
+vfx_2/vfx_2_00002
+bounds:63,960,30,13
+offsets:67,60,195,195
+vfx_2/vfx_2_00003
+bounds:63,960,30,13
+offsets:67,60,195,195
+vfx_2/vfx_2_00004
+bounds:936,931,42,52
+offsets:44,62,195,195
+rotate:90
+vfx_2/vfx_2_00005
+bounds:936,931,42,52
+offsets:44,62,195,195
+rotate:90
+vfx_2/vfx_2_00006
+bounds:385,895,44,83
+offsets:39,66,195,195
+rotate:90
+vfx_2/vfx_2_00007
+bounds:385,895,44,83
+offsets:39,66,195,195
+rotate:90
+vfx_2/vfx_2_00008
+bounds:385,895,44,83
+offsets:39,66,195,195
+rotate:90
+vfx_2/vfx_2_00009
+bounds:418,549,89,80
+offsets:42,73,195,195
+vfx_2/vfx_2_00010
+bounds:418,549,89,80
+offsets:42,73,195,195
+vfx_2/vfx_2_00011
+bounds:308,555,108,77
+offsets:43,77,195,195
+vfx_2/vfx_2_00012
+bounds:308,555,108,77
+offsets:43,77,195,195
+vfx_2/vfx_2_00013
+bounds:308,555,108,77
+offsets:43,77,195,195
+vfx_2/vfx_2_00014
+bounds:773,620,112,72
+offsets:44,80,195,195
+vfx_2/vfx_2_00015
+bounds:773,620,112,72
+offsets:44,80,195,195
+vfx_2/vfx_2_00016
+bounds:192,571,114,72
+offsets:44,81,195,195
+vfx_2/vfx_2_00017
+bounds:192,571,114,72
+offsets:44,81,195,195
+vfx_2/vfx_2_00018
+bounds:619,698,114,65
+offsets:45,87,195,195
+vfx_2/vfx_2_00019
+bounds:619,698,114,65
+offsets:45,87,195,195
+vfx_2/vfx_2_00020
+bounds:619,698,114,65
+offsets:45,87,195,195
+vfx_2/vfx_2_00021
+bounds:503,703,114,64
+offsets:46,88,195,195
+vfx_2/vfx_2_00022
+bounds:503,703,114,64
+offsets:46,88,195,195
+vfx_2/vfx_2_00023
+bounds:76,734,113,63
+offsets:47,88,195,195
+vfx_2/vfx_2_00024
+bounds:76,734,113,63
+offsets:47,88,195,195
+vfx_2/vfx_2_00025
+bounds:76,734,113,63
+offsets:47,88,195,195
+vfx_2/vfx_2_00026
+bounds:296,716,100,64
+offsets:60,86,195,195
+vfx_2/vfx_2_00027
+bounds:296,716,100,64
+offsets:60,86,195,195
+
+WIND_2.png
+size:932,919
+filter:Linear,Linear
+pma:true
+scale:0.5
+RING
+bounds:2,275,306,314
+offsets:50,38,412,412
+RING_2
+bounds:2,591,312,326
+offsets:49,33,412,412
+Whirl/vfx_tex_Whirl_21
+bounds:649,446,131,142
+offsets:24,21,184,184
+Whirl/vfx_tex_Whirl_22
+bounds:785,218,131,143
+offsets:24,20,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_23
+bounds:785,484,131,145
+offsets:24,19,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_24
+bounds:785,351,131,145
+offsets:24,19,184,184
+rotate:90
+Whirl/vfx_tex_Whirl_25
+bounds:477,175,131,146
+offsets:24,19,184,184
+rotate:90
+explosion/explosion_00009
+bounds:444,17,153,141
+offsets:20,24,195,195
+rotate:90
+explosion/explosion_00010
+bounds:642,304,141,140
+offsets:29,23,195,195
+explosion/explosion_00011
+bounds:782,617,148,139
+offsets:25,24,195,195
+explosion/explosion_00012
+bounds:493,449,154,139
+offsets:22,24,195,195
+explosion/explosion_00013
+bounds:493,449,154,139
+offsets:22,24,195,195
+explosion/explosion_00014
+bounds:486,308,154,139
+offsets:21,24,195,195
+explosion/explosion_00015
+bounds:625,166,153,136
+offsets:22,25,195,195
+inner circle_1
+bounds:2,2,279,271
+offsets:64,62,412,412
+inner circle_2
+bounds:316,655,261,262
+offsets:76,66,412,412
+smooke/Comp 2_00008
+bounds:780,70,146,147
+offsets:26,22,195,195
+rotate:90
+smooke/Comp 2_00009
+bounds:780,70,146,147
+offsets:26,22,195,195
+rotate:90
+smooke/Comp 2_00010
+bounds:587,12,152,152
+offsets:23,19,195,195
+smooke/Comp 2_00011
+bounds:587,12,152,152
+offsets:23,19,195,195
+smooke/Comp 2_00012
+bounds:283,17,159,153
+offsets:19,19,195,195
+smooke/Comp 2_00013
+bounds:283,17,159,153
+offsets:19,19,195,195
+smooke/Comp 2_00014
+bounds:310,172,165,155
+offsets:16,18,195,195
+smooke/Comp 2_00015
+bounds:759,758,169,159
+offsets:14,16,195,195
+smooke/Comp 2_00016
+bounds:310,329,174,161
+offsets:12,15,195,195
+smooke/Comp 2_00017
+bounds:316,492,175,161
+offsets:11,15,195,195
+smooke/Comp 2_00018
+bounds:579,590,177,162
+offsets:10,15,195,195
+smooke/Comp 2_00019
+bounds:579,590,177,162
+offsets:10,15,195,195
+smooke/Comp 2_00020
+bounds:579,754,178,163
+offsets:10,14,195,195

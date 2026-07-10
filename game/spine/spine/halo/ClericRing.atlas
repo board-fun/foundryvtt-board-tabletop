@@ -1,0 +1,194 @@
+ClericRing.png
+size:947,996
+filter:Linear,Linear
+pma:true
+scale:0.5
+VerticalFlare_0000
+bounds:457,3,63,69
+offsets:11,11,85,91
+rotate:90
+VerticalFlare_0001
+bounds:457,3,63,69
+offsets:11,11,85,91
+rotate:90
+VerticalFlare_0002
+bounds:457,3,63,69
+offsets:11,11,85,91
+rotate:90
+VerticalFlare_0003
+bounds:457,3,63,69
+offsets:11,11,85,91
+rotate:90
+VerticalFlare_0004
+bounds:457,3,63,69
+offsets:11,11,85,91
+rotate:90
+VerticalFlare_0013
+bounds:2,2,141,61
+offsets:11,11,164,83
+VerticalFlare_0014
+bounds:2,2,141,61
+offsets:11,11,164,83
+VerticalFlare_0015
+bounds:145,30,130,33
+offsets:18,18,166,69
+VerticalFlare_0016
+bounds:145,30,130,33
+offsets:18,18,166,69
+VerticalFlare_0017
+bounds:145,30,130,33
+offsets:18,18,166,69
+little_sparkles
+bounds:457,513,22,24
+offsets:5,1,31,26
+sparkles
+bounds:277,35,39,28
+offsets:1,2,46,34
+sparks/Comp 2_00000
+bounds:318,62,1,1
+sparks/Comp 2_00001
+bounds:318,62,1,1
+sparks/Comp 2_00018
+bounds:318,62,1,1
+sparks/Comp 2_00019
+bounds:318,62,1,1
+sparks/Comp 2_00020
+bounds:318,62,1,1
+sparks/Comp 2_00021
+bounds:318,62,1,1
+sparks/Comp 2_00022
+bounds:318,62,1,1
+sparks/Comp 2_00023
+bounds:318,62,1,1
+sparks/Comp 2_00024
+bounds:318,62,1,1
+sparks/Comp 2_00025
+bounds:318,62,1,1
+sparks/Comp 2_00014
+bounds:482,517,477,461
+offsets:109,96,624,624
+rotate:90
+sparks/Comp 2_00015
+bounds:2,539,478,455
+offsets:111,92,624,624
+sparks/Comp 2_00016
+bounds:2,65,472,453
+offsets:113,92,624,624
+rotate:90
+sparks/Comp 2_00017
+bounds:481,68,464,447
+offsets:120,96,624,624
+
+ClericRing_2.png
+size:997,787
+filter:Linear,Linear
+pma:true
+scale:0.5
+Star
+bounds:323,70,309,299
+Star_Glow
+bounds:476,680,108,105
+offsets:1,1,110,107
+VerticalFlare_0005
+bounds:2,707,78,106
+offsets:7,10,92,126
+rotate:90
+VerticalFlare_0006
+bounds:2,707,78,106
+offsets:7,10,92,126
+rotate:90
+VerticalFlare_0007
+bounds:2,707,78,106
+offsets:7,10,92,126
+rotate:90
+VerticalFlare_0008
+bounds:235,701,84,121
+offsets:9,10,102,141
+rotate:90
+VerticalFlare_0009
+bounds:235,701,84,121
+offsets:9,10,102,141
+rotate:90
+VerticalFlare_0010
+bounds:358,701,116,84
+offsets:11,9,138,101
+VerticalFlare_0011
+bounds:358,701,116,84
+offsets:11,9,138,101
+VerticalFlare_0012
+bounds:358,701,116,84
+offsets:11,9,138,101
+cross
+bounds:586,675,114,110
+offsets:28,13,184,138
+glowCircle
+bounds:704,352,256,256
+offsets:5,5,266,266
+innerRing
+bounds:465,371,237,237
+innerRing_Detail
+bounds:240,479,220,223
+offsets:0,0,221,224
+rotate:90
+sparks/Comp 2_00004
+bounds:2,181,296,319
+offsets:155,137,624,624
+rotate:90
+sparks/Comp 2_00005
+bounds:2,499,200,236
+offsets:205,200,624,624
+rotate:90
+sparks/Comp 2_00006
+bounds:110,702,83,123
+offsets:237,224,624,624
+rotate:90
+sparks/Comp 2_00007
+bounds:110,702,83,123
+offsets:237,224,624,624
+rotate:90
+sparks/Comp 2_00008
+bounds:702,610,175,178
+offsets:228,217,624,624
+rotate:90
+sparks/Comp 2_00009
+bounds:634,2,348,361
+offsets:153,135,624,624
+rotate:90
+
+ClericRing_3.png
+size:832,774
+filter:Linear,Linear
+pma:true
+scale:0.5
+mainRing
+bounds:2,418,354,354
+mainRing_Glow
+bounds:358,403,369,369
+offsets:22,6,405,382
+sparks/Comp 2_00003
+bounds:412,2,399,418
+offsets:113,96,624,624
+rotate:90
+sparks/Comp 2_00010
+bounds:2,3,398,408
+offsets:128,125,624,624
+rotate:90
+
+ClericRing_4.png
+size:908,885
+filter:Linear,Linear
+pma:true
+scale:0.5
+sparks/Comp 2_00002
+bounds:2,411,447,472
+offsets:85,68,624,624
+sparks/Comp 2_00011
+bounds:451,2,430,434
+offsets:119,109,624,624
+rotate:90
+sparks/Comp 2_00012
+bounds:451,434,455,449
+offsets:115,103,624,624
+sparks/Comp 2_00013
+bounds:451,434,455,449
+offsets:115,103,624,624

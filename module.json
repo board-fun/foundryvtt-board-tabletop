@@ -1,0 +1,18 @@
+{
+  "id": "board-tabletop",
+  "title": "Board Tabletop",
+  "description": "This module is used to bring Foundry to Board with the Board Tabletop experience. Learn more at <a href=\"https://board.fun/.\">https://board.fun/</a>.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.360"
+  },
+  "authors": [
+    {
+      "name": "Board",
+      "email": "hello@board.fun"
+    }
+  ],
+  "esmodules": ["scripts/board-tabletop-module.mjs"],
+  "socket": true
+}

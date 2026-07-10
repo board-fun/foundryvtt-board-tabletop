@@ -1,0 +1,1624 @@
+Ice_Elemental.png
+size:997,986
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_671
+bounds:926,931,49,34
+offsets:86,110,256,256
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_672
+bounds:611,701,79,92
+offsets:71,87,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_692
+bounds:34,978,11,6
+offsets:61,69,256,256
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_693
+bounds:22,980,10,4
+offsets:63,69,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_660
+bounds:604,608,91,92
+offsets:80,85,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_684
+bounds:557,109,102,114
+offsets:77,76,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_685
+bounds:2,75,105,115
+offsets:75,76,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_691
+bounds:125,561,114,94
+offsets:70,74,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_692
+bounds:488,621,114,90
+offsets:70,78,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_693
+bounds:698,589,114,90
+offsets:70,78,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_694
+bounds:254,629,115,85
+offsets:70,83,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_695
+bounds:371,626,115,85
+offsets:69,83,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_696
+bounds:705,681,109,83
+offsets:69,85,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_697
+bounds:705,681,109,83
+offsets:69,85,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_698
+bounds:878,707,109,75
+offsets:69,93,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_699
+bounds:368,788,106,65
+offsets:71,102,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_135
+bounds:476,785,75,66
+offsets:142,118,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_136
+bounds:553,785,77,66
+offsets:141,117,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_137
+bounds:911,784,77,66
+offsets:141,116,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_138
+bounds:632,782,77,66
+offsets:141,115,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_139
+bounds:925,892,69,37
+offsets:141,143,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_140
+bounds:925,852,70,38
+offsets:140,141,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_141
+bounds:767,838,70,39
+offsets:140,139,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_142
+bounds:839,837,70,40
+offsets:140,137,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_143
+bounds:2,822,70,41
+offsets:140,135,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_144
+bounds:74,819,71,42
+offsets:139,133,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_145
+bounds:147,819,71,42
+offsets:139,131,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_146
+bounds:220,815,72,44
+offsets:138,129,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_147
+bounds:294,810,72,46
+offsets:138,126,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_148
+bounds:711,767,81,69
+offsets:138,124,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_149
+bounds:2,747,82,70
+offsets:138,122,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_150
+bounds:794,766,82,69
+offsets:138,121,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_151
+bounds:86,747,84,70
+offsets:137,118,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_152
+bounds:172,743,84,70
+offsets:137,116,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_153
+bounds:258,738,85,70
+offsets:137,114,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_154
+bounds:345,716,86,70
+offsets:136,112,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_155
+bounds:433,713,87,70
+offsets:136,110,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_156
+bounds:522,713,87,70
+offsets:136,108,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_188
+bounds:530,2,127,105
+offsets:83,45,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_190
+bounds:402,36,126,104
+offsets:84,42,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_191
+bounds:275,48,125,102
+offsets:85,42,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_192
+bounds:848,144,123,101
+offsets:86,41,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_193
+bounds:278,152,123,98
+offsets:86,41,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_194
+bounds:2,182,122,96
+offsets:87,41,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_195
+bounds:2,567,121,93
+offsets:88,42,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_196
+bounds:692,885,120,29
+offsets:89,104,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_197
+bounds:458,890,120,28
+offsets:89,102,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_198
+bounds:226,893,119,27
+offsets:90,101,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_199
+bounds:698,916,119,26
+offsets:90,100,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_200
+bounds:466,920,117,24
+offsets:91,99,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_201
+bounds:116,923,116,23
+offsets:92,98,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_202
+bounds:234,922,117,22
+offsets:92,97,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_203
+bounds:808,944,116,21
+offsets:93,96,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_204
+bounds:349,946,116,19
+offsets:93,95,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_205
+bounds:278,967,115,17
+offsets:94,94,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_206
+bounds:117,948,115,18
+offsets:94,93,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_207
+bounds:395,967,115,17
+offsets:94,92,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_208
+bounds:512,967,114,17
+offsets:95,91,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_209
+bounds:628,967,114,17
+offsets:95,90,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_210
+bounds:744,967,113,17
+offsets:96,89,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_211
+bounds:859,967,113,17
+offsets:96,88,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_212
+bounds:47,968,114,16
+offsets:96,88,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_213
+bounds:163,968,113,16
+offsets:97,86,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_214
+bounds:2,949,113,17
+offsets:97,84,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_215
+bounds:234,947,113,18
+offsets:97,82,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_216
+bounds:467,946,112,19
+offsets:98,79,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_217
+bounds:581,946,112,19
+offsets:98,77,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_218
+bounds:695,945,111,20
+offsets:99,75,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_219
+bounds:2,925,112,22
+offsets:99,72,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_220
+bounds:353,921,111,23
+offsets:100,70,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_221
+bounds:585,919,111,24
+offsets:100,68,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_222
+bounds:2,897,110,26
+offsets:101,65,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_223
+bounds:114,895,110,26
+offsets:101,63,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_224
+bounds:347,892,109,27
+offsets:102,61,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_225
+bounds:580,888,110,29
+offsets:102,58,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_226
+bounds:814,879,109,29
+offsets:103,56,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_227
+bounds:2,865,109,30
+offsets:103,54,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_228
+bounds:113,863,108,30
+offsets:104,52,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_229
+bounds:223,861,107,30
+offsets:105,50,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_230
+bounds:332,858,108,32
+offsets:105,47,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_231
+bounds:442,855,107,33
+offsets:106,45,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_232
+bounds:551,853,106,33
+offsets:107,43,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_233
+bounds:659,850,106,33
+offsets:107,42,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_234
+bounds:819,910,104,32
+offsets:109,42,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_235
+bounds:12,982,2,3
+offsets:211,70,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_236
+bounds:17,982,2,3
+offsets:211,69,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_237
+bounds:2,983,1,1
+offsets:212,69,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_238
+bounds:5,983,1,1
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_239
+bounds:5,983,1,1
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_49
+bounds:5,983,1,1
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_50
+bounds:5,983,1,1
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_51
+bounds:8,983,1,2
+offsets:177,229,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_52
+bounds:2,662,121,83
+offsets:58,148,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_53
+bounds:125,657,127,84
+offsets:58,146,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_54
+bounds:2,280,128,94
+offsets:57,144,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_55
+bounds:132,253,129,94
+offsets:56,143,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_56
+bounds:564,213,128,94
+offsets:56,141,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_57
+bounds:564,309,129,93
+offsets:55,140,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_58
+bounds:703,366,129,92
+offsets:54,139,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_59
+bounds:136,349,130,92
+offsets:53,137,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_60
+bounds:570,404,131,91
+offsets:52,136,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_61
+bounds:2,376,132,91
+offsets:51,134,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_62
+bounds:662,497,133,90
+offsets:51,133,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_63
+bounds:2,469,134,90
+offsets:50,131,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_64
+bounds:816,616,136,89
+offsets:49,130,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_65
+bounds:241,535,137,89
+offsets:48,128,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_66
+bounds:380,530,138,89
+offsets:48,126,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_67
+bounds:814,525,139,89
+offsets:47,125,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_68
+bounds:520,517,140,89
+offsets:47,124,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_69
+bounds:138,443,141,90
+offsets:46,122,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_70
+bounds:281,438,142,90
+offsets:46,121,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_71
+bounds:797,433,143,90
+offsets:45,119,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_72
+bounds:425,425,143,90
+offsets:45,118,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_73
+bounds:268,345,145,91
+offsets:44,116,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_74
+bounds:797,340,145,91
+offsets:44,115,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_75
+bounds:415,332,147,91
+offsets:43,113,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_76
+bounds:263,252,147,91
+offsets:43,112,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_77
+bounds:695,247,148,91
+offsets:42,111,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_78
+bounds:845,247,150,91
+offsets:41,109,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_79
+bounds:412,239,150,91
+offsets:41,108,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_80
+bounds:126,158,150,92
+offsets:41,106,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_81
+bounds:694,152,152,93
+offsets:40,103,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_82
+bounds:403,142,152,95
+offsets:40,100,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_83
+bounds:119,60,154,96
+offsets:39,98,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_84
+bounds:673,52,154,98
+offsets:39,95,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_85
+bounds:829,43,156,99
+offsets:38,92,256,256
+
+Ice_Elemental_2.png
+size:1000,927
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_683
+bounds:2,717,106,118
+offsets:78,77,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_686
+bounds:284,713,107,116
+offsets:74,75,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_687
+bounds:402,712,107,116
+offsets:74,75,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_688
+bounds:2,495,110,116
+offsets:72,75,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_689
+bounds:2,267,112,117
+offsets:71,74,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_690
+bounds:882,461,113,116
+offsets:71,74,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_108
+bounds:823,2,115,155
+offsets:90,68,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_134
+bounds:661,119,113,143
+offsets:104,42,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_157
+bounds:448,262,161,112
+offsets:63,106,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_158
+bounds:806,119,161,113
+offsets:63,104,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_159
+bounds:2,37,162,113
+offsets:63,102,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_160
+bounds:166,36,162,113
+offsets:64,100,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_161
+bounds:330,33,162,113
+offsets:64,98,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_162
+bounds:611,261,163,112
+offsets:64,96,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_163
+bounds:776,234,162,112
+offsets:65,94,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_164
+bounds:494,32,163,113
+offsets:65,91,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_165
+bounds:659,4,162,113
+offsets:66,89,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_166
+bounds:491,376,163,111
+offsets:66,88,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_167
+bounds:656,375,162,111
+offsets:67,86,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_168
+bounds:2,152,163,112
+offsets:67,83,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_169
+bounds:167,151,162,112
+offsets:68,81,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_170
+bounds:331,148,163,112
+offsets:68,79,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_171
+bounds:820,348,162,111
+offsets:69,77,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_172
+bounds:121,266,162,111
+offsets:70,75,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_173
+bounds:285,265,161,111
+offsets:71,73,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_174
+bounds:555,489,162,110
+offsets:71,71,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_175
+bounds:719,488,161,110
+offsets:72,69,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_176
+bounds:2,381,160,110
+offsets:73,67,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_177
+bounds:164,379,160,110
+offsets:74,65,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_178
+bounds:728,600,159,109
+offsets:75,63,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_179
+bounds:234,491,159,109
+offsets:75,61,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_180
+bounds:395,490,158,109
+offsets:76,59,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_181
+bounds:266,602,134,109
+offsets:77,57,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_182
+bounds:889,576,133,109
+offsets:78,55,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_183
+bounds:132,606,132,108
+offsets:79,53,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_184
+bounds:520,711,132,107
+offsets:79,52,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_185
+bounds:654,711,131,107
+offsets:80,50,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_186
+bounds:787,711,129,107
+offsets:81,48,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_187
+bounds:2,607,128,107
+offsets:82,46,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_189
+bounds:641,820,127,105
+offsets:83,43,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_86
+bounds:2,825,156,100
+offsets:38,90,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_87
+bounds:160,824,158,101
+offsets:37,87,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_88
+bounds:320,822,158,103
+offsets:37,84,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_89
+bounds:480,821,159,104
+offsets:37,82,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_90
+bounds:770,820,159,105
+offsets:37,79,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_91
+bounds:122,716,160,106
+offsets:36,77,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_92
+bounds:402,601,161,108
+offsets:36,74,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_93
+bounds:565,601,161,108
+offsets:36,72,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_94
+bounds:326,378,163,110
+offsets:35,69,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_95
+bounds:496,147,163,112
+offsets:35,66,256,256
+ice shards
+bounds:120,493,111,112
+offsets:3,0,114,116
+rotate:90
+
+Ice_Elemental_3.png
+size:1000,907
+filter:Linear,Linear
+pma:true
+scale:0.5
+Back_Glow
+bounds:2,237,333,333
+offsets:5,6,343,345
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_678
+bounds:248,12,223,208
+offsets:15,23,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_679
+bounds:458,11,224,210
+offsets:15,21,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_682
+bounds:337,237,223,214
+offsets:16,17,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_140
+bounds:799,223,237,199
+offsets:8,20,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_195
+bounds:682,462,244,220
+offsets:5,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_196
+bounds:553,240,244,220
+offsets:5,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_197
+bounds:670,2,244,219
+offsets:5,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_198
+bounds:2,14,244,221
+offsets:5,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_201
+bounds:682,684,244,221
+offsets:5,20,256,256
+Ring
+bounds:359,576,321,329
+offsets:1,2,324,331
+Shine
+bounds:2,572,355,333
+
+Ice_Elemental_4.png
+size:983,901
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_676
+bounds:491,229,206,203
+offsets:27,28,256,256
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_677
+bounds:699,229,213,204
+offsets:22,25,256,256
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_680
+bounds:489,3,224,210
+offsets:15,21,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_681
+bounds:701,2,225,213
+offsets:15,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_193
+bounds:493,680,243,219
+offsets:6,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_194
+bounds:738,681,243,218
+offsets:6,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_199
+bounds:2,679,244,220
+offsets:5,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_200
+bounds:248,679,243,220
+offsets:5,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_202
+bounds:2,234,243,220
+offsets:5,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_203
+bounds:247,234,242,220
+offsets:5,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_204
+bounds:2,456,243,221
+offsets:4,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_205
+bounds:247,456,242,221
+offsets:4,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_206
+bounds:2,11,242,221
+offsets:4,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_207
+bounds:246,11,241,221
+offsets:4,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_79
+bounds:491,434,243,205
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_80
+bounds:698,435,243,205
+offsets:7,21,256,256
+rotate:90
+
+Ice_Elemental_5.png
+size:970,913
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_683
+bounds:483,2,221,215
+offsets:17,15,256,256
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_684
+bounds:706,2,206,215
+offsets:23,14,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_665
+bounds:484,464,222,224
+offsets:15,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_100
+bounds:727,483,241,205
+offsets:9,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_208
+bounds:2,689,241,222
+offsets:4,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_209
+bounds:2,465,240,222
+offsets:4,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_210
+bounds:727,690,239,221
+offsets:5,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_211
+bounds:2,240,239,223
+offsets:5,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_212
+bounds:2,15,239,223
+offsets:5,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_213
+bounds:244,464,238,222
+offsets:6,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_214
+bounds:245,688,239,223
+offsets:6,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_215
+bounds:486,689,239,222
+offsets:6,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_216
+bounds:243,240,238,222
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_217
+bounds:243,16,238,222
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_81
+bounds:483,219,243,204
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_82
+bounds:689,219,243,206
+offsets:7,21,256,256
+rotate:90
+
+Ice_Elemental_6.png
+size:950,925
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Fog/vfx_tex_IceRing_Fog_101
+bounds:707,477,241,207
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_218
+bounds:247,685,238,222
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_219
+bounds:707,686,237,221
+offsets:8,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_230
+bounds:450,8,233,222
+offsets:10,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_231
+bounds:670,253,233,222
+offsets:10,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_234
+bounds:471,701,234,222
+offsets:9,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_235
+bounds:471,477,234,222
+offsets:9,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_237
+bounds:226,253,235,222
+offsets:9,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_46
+bounds:226,16,235,222
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_47
+bounds:2,2,235,222
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_49
+bounds:2,478,237,222
+offsets:8,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_50
+bounds:2,239,237,222
+offsets:8,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_83
+bounds:2,717,243,206
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_85
+bounds:226,477,243,206
+offsets:8,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_88
+bounds:463,232,243,205
+offsets:9,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_95
+bounds:685,8,243,203
+offsets:9,25,256,256
+rotate:90
+
+Ice_Elemental_7.png
+size:944,939
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Fog/vfx_tex_IceRing_Fog_189
+bounds:225,481,242,217
+offsets:6,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_220
+bounds:225,7,236,220
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_221
+bounds:247,700,237,221
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_222
+bounds:682,225,236,220
+offsets:10,24,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_224
+bounds:707,717,235,220
+offsets:11,25,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_227
+bounds:669,3,235,220
+offsets:10,25,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_232
+bounds:2,25,232,221
+offsets:10,24,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_233
+bounds:448,240,232,221
+offsets:10,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_236
+bounds:225,245,234,221
+offsets:9,24,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_238
+bounds:2,259,235,221
+offsets:9,24,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_239
+bounds:469,463,235,221
+offsets:9,24,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_48
+bounds:470,716,235,221
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_51
+bounds:2,496,236,221
+offsets:9,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_53
+bounds:447,2,236,220
+offsets:9,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_54
+bounds:692,494,236,220
+offsets:9,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_96
+bounds:2,734,243,203
+offsets:9,25,256,256
+
+Ice_Elemental_8.png
+size:922,937
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_666
+bounds:690,480,216,220
+offsets:16,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_186
+bounds:467,2,241,214
+offsets:7,20,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_190
+bounds:2,718,242,217
+offsets:6,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_191
+bounds:224,482,242,217
+offsets:6,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_192
+bounds:223,26,242,217
+offsets:6,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_223
+bounds:223,245,235,219
+offsets:11,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_225
+bounds:246,701,234,220
+offsets:11,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_226
+bounds:2,482,234,220
+offsets:11,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_228
+bounds:468,701,234,220
+offsets:10,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_229
+bounds:468,465,234,220
+offsets:10,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_52
+bounds:2,244,236,219
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_55
+bounds:683,227,236,218
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_56
+bounds:444,245,237,218
+offsets:9,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_57
+bounds:2,5,237,217
+offsets:9,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_58
+bounds:683,9,237,216
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_59
+bounds:690,698,237,216
+offsets:9,22,256,256
+rotate:90
+
+Ice_Elemental_9.png
+size:1000,941
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_674
+bounds:823,43,171,193
+offsets:40,38,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_670
+bounds:835,238,163,162
+offsets:45,47,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_672
+bounds:835,402,164,163
+offsets:45,46,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_97
+bounds:823,568,164,175
+offsets:35,62,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_187
+bounds:619,247,241,214
+offsets:7,20,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_70
+bounds:620,493,239,201
+offsets:8,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_75
+bounds:2,246,242,204
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_76
+bounds:2,2,242,204
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_77
+bounds:208,2,242,203
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_78
+bounds:413,2,242,203
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_84
+bounds:2,734,242,205
+offsets:8,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_86
+bounds:246,734,242,205
+offsets:9,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_87
+bounds:490,734,242,205
+offsets:9,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_89
+bounds:208,246,242,204
+offsets:10,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_92
+bounds:209,490,242,204
+offsets:10,24,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_93
+bounds:414,246,242,203
+offsets:10,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_94
+bounds:415,490,242,203
+offsets:10,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_97
+bounds:618,2,242,203
+offsets:9,25,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_98
+bounds:734,734,242,205
+offsets:9,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_99
+bounds:2,490,242,205
+offsets:9,24,256,256
+rotate:90
+
+Ice_Elemental_10.png
+size:1000,946
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_686
+bounds:241,514,200,214
+offsets:28,13,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_675
+bounds:832,2,168,166
+offsets:43,45,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_679
+bounds:832,172,169,166
+offsets:42,46,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_99
+bounds:832,343,166,179
+offsets:34,57,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_102
+bounds:214,272,240,207
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_103
+bounds:216,30,240,206
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_105
+bounds:682,524,240,207
+offsets:8,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_183
+bounds:245,734,240,210
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_184
+bounds:2,272,240,210
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_185
+bounds:487,734,240,210
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_188
+bounds:2,730,241,214
+offsets:7,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_60
+bounds:2,514,237,214
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_61
+bounds:443,520,237,212
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_62
+bounds:2,32,238,212
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_63
+bounds:729,733,238,211
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_72
+bounds:424,29,241,202
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_73
+bounds:628,277,241,202
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_74
+bounds:628,34,241,202
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_91
+bounds:423,272,240,203
+offsets:11,24,256,256
+rotate:90
+
+Ice_Elemental_11.png
+size:1000,947
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_673
+bounds:864,805,134,140
+offsets:55,61,256,256
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_689
+bounds:148,224,130,164
+offsets:45,13,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_690
+bounds:148,224,130,164
+offsets:45,13,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_691
+bounds:749,328,120,165
+offsets:56,12,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_661
+bounds:314,203,150,147
+offsets:47,55,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_668
+bounds:466,186,154,151
+offsets:48,54,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_669
+bounds:622,171,158,155
+offsets:47,51,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_671
+bounds:2,60,163,162
+offsets:45,47,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_673
+bounds:167,36,165,165
+offsets:44,45,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_674
+bounds:514,3,167,166
+offsets:43,45,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_676
+bounds:683,2,168,166
+offsets:43,45,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_682
+bounds:606,462,141,129
+offsets:71,77,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_105
+bounds:2,830,115,183
+offsets:89,44,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_106
+bounds:187,830,115,184
+offsets:89,42,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_107
+bounds:523,829,116,182
+offsets:89,42,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_109
+bounds:707,829,116,155
+offsets:90,66,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_110
+bounds:2,712,116,154
+offsets:90,65,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_111
+bounds:158,712,116,154
+offsets:91,64,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_112
+bounds:314,712,116,154
+offsets:91,62,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_113
+bounds:470,711,116,153
+offsets:92,61,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_114
+bounds:625,711,116,152
+offsets:92,60,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_115
+bounds:452,474,117,152
+offsets:92,58,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_116
+bounds:779,687,116,151
+offsets:93,57,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_117
+bounds:749,450,117,150
+offsets:93,56,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_118
+bounds:2,594,116,149
+offsets:94,55,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_119
+bounds:2,357,117,149
+offsets:94,53,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_120
+bounds:153,594,116,148
+offsets:95,52,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_121
+bounds:303,594,116,147
+offsets:95,51,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_122
+bounds:452,593,116,147
+offsets:96,50,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_123
+bounds:601,593,116,148
+offsets:96,48,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_124
+bounds:751,569,116,148
+offsets:97,47,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_125
+bounds:2,476,116,148
+offsets:97,46,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_126
+bounds:152,476,116,148
+offsets:98,45,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_127
+bounds:302,476,116,148
+offsets:98,44,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_128
+bounds:373,830,115,148
+offsets:99,43,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_129
+bounds:153,357,117,148
+offsets:98,42,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_130
+bounds:303,356,118,147
+offsets:97,42,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_131
+bounds:452,352,120,147
+offsets:96,41,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_132
+bounds:601,339,121,146
+offsets:95,41,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_133
+bounds:2,233,122,144
+offsets:94,42,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_96
+bounds:782,170,164,156
+offsets:35,64,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_98
+bounds:334,19,165,178
+offsets:35,59,256,256
+rotate:90
+
+Ice_Elemental_12.png
+size:945,911
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_663
+bounds:245,692,217,216
+offsets:18,23,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_664
+bounds:2,487,217,216
+offsets:18,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_104
+bounds:671,494,239,206
+offsets:9,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_106
+bounds:220,483,239,207
+offsets:8,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_108
+bounds:213,243,238,207
+offsets:8,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_111
+bounds:2,9,236,207
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_114
+bounds:422,243,233,207
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_115
+bounds:657,219,231,207
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_176
+bounds:452,2,239,203
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_180
+bounds:704,703,239,206
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_181
+bounds:211,35,239,206
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_182
+bounds:657,11,239,206
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_64
+bounds:2,247,238,209
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_65
+bounds:461,452,238,208
+offsets:9,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_66
+bounds:463,702,239,207
+offsets:8,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_90
+bounds:2,706,241,203
+offsets:11,24,256,256
+
+Ice_Elemental_13.png
+size:900,918
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_685
+bounds:418,236,206,215
+offsets:23,14,256,256
+rotate:90
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_667
+bounds:210,23,206,213
+offsets:19,24,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_107
+bounds:243,678,238,206
+offsets:8,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_109
+bounds:2,472,237,206
+offsets:8,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_110
+bounds:451,681,235,206
+offsets:8,23,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_112
+bounds:451,444,235,206
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_113
+bounds:2,236,234,206
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_116
+bounds:635,212,230,205
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_117
+bounds:418,4,230,204
+offsets:7,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_118
+bounds:210,238,232,206
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_119
+bounds:2,2,232,205
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_177
+bounds:624,7,239,203
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_178
+bounds:659,677,239,203
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_179
+bounds:659,472,239,203
+offsets:7,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_67
+bounds:2,711,239,205
+offsets:8,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_68
+bounds:210,472,239,204
+offsets:8,23,256,256
+
+Ice_Elemental_14.png
+size:920,883
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_662
+bounds:2,238,204,203
+offsets:26,27,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_120
+bounds:207,240,232,203
+offsets:7,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_121
+bounds:243,648,233,203
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_122
+bounds:2,444,233,203
+offsets:7,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_123
+bounds:685,477,232,201
+offsets:8,22,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_124
+bounds:207,5,233,202
+offsets:8,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_127
+bounds:2,3,233,202
+offsets:9,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_128
+bounds:448,679,233,202
+offsets:9,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_129
+bounds:411,2,233,201
+offsets:9,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_130
+bounds:638,273,233,201
+offsets:9,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_131
+bounds:448,476,235,201
+offsets:8,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_132
+bounds:683,680,235,201
+offsets:8,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_157
+bounds:441,205,238,195
+offsets:10,18,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_160
+bounds:646,33,238,195
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_69
+bounds:2,679,239,202
+offsets:8,23,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_71
+bounds:207,445,239,201
+offsets:8,23,256,256
+
+Ice_Elemental_15.png
+size:922,909
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Fog/vfx_tex_IceRing_Fog_125
+bounds:242,675,232,201
+offsets:9,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_126
+bounds:2,478,232,201
+offsets:9,22,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_133
+bounds:204,40,235,200
+offsets:8,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_134
+bounds:2,2,235,200
+offsets:8,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_135
+bounds:445,707,235,200
+offsets:8,21,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_137
+bounds:205,277,237,200
+offsets:7,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_138
+bounds:2,239,237,200
+offsets:7,20,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_139
+bounds:646,305,236,199
+offsets:8,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_141
+bounds:645,40,237,198
+offsets:8,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_158
+bounds:205,479,238,194
+offsets:10,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_161
+bounds:2,712,238,195
+offsets:9,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_170
+bounds:444,240,237,200
+offsets:8,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_171
+bounds:445,506,237,199
+offsets:8,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_172
+bounds:684,507,236,199
+offsets:8,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_173
+bounds:682,708,237,199
+offsets:8,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_174
+bounds:406,39,237,199
+offsets:8,20,256,256
+
+Ice_Elemental_16.png
+size:919,915
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Fog/vfx_tex_IceRing_Fog_136
+bounds:241,678,235,199
+offsets:8,21,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_142
+bounds:202,479,237,197
+offsets:8,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_143
+bounds:640,518,236,196
+offsets:9,20,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_144
+bounds:2,715,237,198
+offsets:9,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_145
+bounds:441,439,237,197
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_146
+bounds:442,716,237,197
+offsets:9,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_147
+bounds:2,238,236,197
+offsets:10,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_148
+bounds:681,717,236,196
+offsets:10,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_150
+bounds:201,238,236,197
+offsets:11,18,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_151
+bounds:2,40,236,196
+offsets:11,18,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_152
+bounds:598,2,236,196
+offsets:11,18,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_153
+bounds:400,241,237,196
+offsets:11,18,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_163
+bounds:639,200,237,196
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_164
+bounds:400,2,237,196
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_175
+bounds:2,476,237,198
+offsets:8,21,256,256
+rotate:90
+
+Ice_Elemental_17.png
+size:938,898
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_675
+bounds:216,53,171,193
+offsets:40,38,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_687
+bounds:637,475,182,213
+offsets:31,13,256,256
+rotate:90
+Ice Ring/Explosion/Back/vfx_tex_IceCrystal_Explosion_Back_688
+bounds:2,47,177,212
+offsets:35,13,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_102
+bounds:767,2,169,181
+offsets:33,50,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_103
+bounds:583,13,170,182
+offsets:33,48,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_104
+bounds:411,41,170,183
+offsets:33,46,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_149
+bounds:439,423,235,196
+offsets:11,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_154
+bounds:2,701,237,195
+offsets:11,18,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_155
+bounds:398,226,236,195
+offsets:11,18,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_156
+bounds:636,185,236,195
+offsets:11,18,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_159
+bounds:637,659,237,194
+offsets:10,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_162
+bounds:200,463,237,195
+offsets:9,19,256,256
+Ice Ring/Fog/vfx_tex_IceRing_Fog_165
+bounds:241,660,236,196
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_166
+bounds:2,463,236,196
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_167
+bounds:439,660,236,196
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_168
+bounds:2,226,235,196
+offsets:9,19,256,256
+rotate:90
+Ice Ring/Fog/vfx_tex_IceRing_Fog_169
+bounds:200,226,235,196
+offsets:9,19,256,256
+rotate:90
+
+Ice_Elemental_18.png
+size:527,341
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_677
+bounds:2,172,167,167
+offsets:43,45,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_678
+bounds:171,172,168,167
+offsets:43,45,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_680
+bounds:185,2,169,168
+offsets:42,45,256,256
+Ice Ring/Explosion/Front/vfx_tex_IceRing_Explosion_Front_681
+bounds:356,2,169,168
+offsets:42,45,256,256
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_100
+bounds:341,172,167,179
+offsets:34,55,256,256
+rotate:90
+Ice Ring/Flakes/vfx_tex_IceRing_Flakes_101
+bounds:2,3,167,181
+offsets:34,52,256,256
+rotate:90

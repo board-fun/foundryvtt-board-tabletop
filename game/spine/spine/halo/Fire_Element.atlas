@@ -1,0 +1,174 @@
+Fire_Element.png
+size:947,904
+filter:Linear,Linear
+pma:true
+scale:0.5
+-innerRing
+bounds:2,136,242,242
+-innerRing_fire
+bounds:246,40,311,311
+offsets:0,1,311,312
+explosion_vxf (1)
+bounds:782,714,110,111
+offsets:25,21,154,154
+rotate:90
+explosion_vxf (2)
+bounds:2,654,110,111
+offsets:25,21,154,154
+rotate:90
+explosion_vxf (3)
+bounds:115,637,111,111
+offsets:25,21,154,154
+explosion_vxf (4)
+bounds:228,637,111,111
+offsets:25,21,154,154
+explosion_vxf (5)
+bounds:341,629,112,111
+offsets:24,21,154,154
+explosion_vxf (6)
+bounds:455,614,113,112
+offsets:24,21,154,154
+explosion_vxf (7)
+bounds:570,609,114,112
+offsets:23,21,154,154
+explosion_vxf (8)
+bounds:686,600,113,112
+offsets:23,21,154,154
+explosion_vxf (9)
+bounds:686,600,113,112
+offsets:23,21,154,154
+fireRing_glow
+bounds:559,2,346,335
+offsets:19,16,391,375
+sidewayFlame_vfx (01)
+bounds:616,835,98,67
+offsets:29,3,192,154
+sidewayFlame_vfx (02)
+bounds:2,783,107,90
+offsets:29,4,192,154
+rotate:90
+sidewayFlame_vfx (03)
+bounds:2,521,117,114
+offsets:29,4,192,154
+sidewayFlame_vfx (04)
+bounds:121,518,119,117
+offsets:30,5,192,154
+sidewayFlame_vfx (05)
+bounds:385,491,121,122
+offsets:30,5,192,154
+rotate:90
+sidewayFlame_vfx (06)
+bounds:509,485,122,126
+offsets:31,5,192,154
+rotate:90
+sidewayFlame_vfx (07)
+bounds:637,473,125,130
+offsets:31,4,192,154
+rotate:90
+sidewayFlame_vfx (08)
+bounds:146,380,127,132
+offsets:31,5,192,154
+rotate:90
+sidewayFlame_vfx (09)
+bounds:423,353,130,135
+offsets:31,5,192,154
+rotate:90
+sidewayFlame_vfx (10)
+bounds:701,339,131,137
+offsets:32,5,192,154
+rotate:90
+sidewayFlame_vfx (11)
+bounds:560,341,130,139
+offsets:34,5,192,154
+rotate:90
+sidewayFlame_vfx (12)
+bounds:280,360,129,141
+offsets:35,5,192,154
+rotate:90
+sidewayFlame_vfx (13)
+bounds:2,390,126,142
+offsets:37,5,192,154
+rotate:90
+sidewayFlame_vfx (14)
+bounds:769,472,125,142
+offsets:38,5,192,154
+rotate:90
+sidewayFlame_vfx (15)
+bounds:242,509,118,141
+offsets:40,6,192,154
+rotate:90
+sidewayFlame_vfx (16)
+bounds:801,599,113,141
+offsets:41,6,192,154
+rotate:90
+sidewayFlame_vfx (17)
+bounds:639,723,106,141
+offsets:43,6,192,154
+rotate:90
+sidewayFlame_vfx (18)
+bounds:497,728,105,140
+offsets:44,6,192,154
+rotate:90
+sidewayFlame_vfx (19)
+bounds:357,742,98,138
+offsets:45,6,192,154
+rotate:90
+sidewayFlame_vfx (20)
+bounds:222,750,97,133
+offsets:46,6,192,154
+rotate:90
+sidewayFlame_vfx (21)
+bounds:94,766,95,126
+offsets:48,6,192,154
+rotate:90
+sidewayFlame_vfx (22)
+bounds:820,826,76,125
+offsets:49,7,192,154
+rotate:90
+sidewayFlame_vfx (23)
+bounds:716,831,71,102
+offsets:51,7,192,154
+rotate:90
+sidewayFlame_vfx (24)
+bounds:514,836,66,100
+offsets:53,8,192,154
+rotate:90
+sidewayFlame_vfx (25)
+bounds:417,842,60,95
+offsets:57,11,192,154
+rotate:90
+sidewayFlame_vfx (26)
+bounds:325,849,53,90
+offsets:62,14,192,154
+rotate:90
+sidewayFlame_vfx (27)
+bounds:244,859,43,79
+offsets:70,22,192,154
+rotate:90
+sidewayFlame_vfx (28)
+bounds:169,863,39,73
+offsets:72,25,192,154
+rotate:90
+sidewayFlame_vfx (29)
+bounds:95,869,33,72
+offsets:73,26,192,154
+rotate:90
+sidewayFlame_vfx (30)
+bounds:48,892,10,45
+offsets:96,53,192,154
+rotate:90
+sidewayFlame_vfx (31)
+bounds:2,893,9,44
+offsets:96,54,192,154
+rotate:90
+
+Fire_Element_2.png
+size:722,346
+filter:Linear,Linear
+pma:true
+scale:0.5
+fireRing
+bounds:363,3,357,341
+fireRing_blur
+bounds:2,2,359,342
+offsets:17,12,378,359
