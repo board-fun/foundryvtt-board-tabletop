@@ -17,18 +17,18 @@ const DEBUG = false;
 
 /**
  * Build tag for this module script. `deploy.sh` runs a global replace of the
- * `b436` placeholder with the deploy build number (e.g. "b364").
+ * `b495` placeholder with the deploy build number (e.g. "b364").
  * Logged at init and included in the boot diagnostics so we can confirm the
  * device is running the expected build.
  *
  * NOTE: the guard below intentionally tests the bare substring "MODULE_BUILD"
- * (no surrounding underscores) so the deploy `sed s|b436|...|g`
+ * (no surrounding underscores) so the deploy `sed s|b495|...|g`
  * does NOT rewrite it. Un-deployed: placeholder still contains it -> "dev".
  * Deployed: placeholder became e.g. "b364", no longer contains it -> "b364".
  */
-const MODULE_BUILD_VERSION = "b436".includes("MODULE_BUILD")
+const MODULE_BUILD_VERSION = "b495".includes("MODULE_BUILD")
   ? "dev"
-  : "b436";
+  : "b495";
 
 /** @typedef {"free"|"combat"|"disabled"} BoardMovementMode */
 
@@ -58,7 +58,10 @@ const state = {
   lastFogUpdate: null,
   /** Last explored mask we shipped — sent again only when canvas.fog._updated fires. */
   lastFogExploredBase64: null,
+  /** Foundry's server-wide pause state; drives the Board pause overlay + move freeze. */
+  lastPaused: false,
   mapListeners: new Set(),
+  sceneTransitionListeners: new Set(),
   cursorListeners: new Set(),
   tokenListeners: new Set(),
   fogListeners: new Set(),
@@ -115,6 +118,19 @@ function normalizePieceAssignments(raw) {
     }
   }
 
+  // Durable glyph → actor id map: the binding key that survives scene / map changes (token
+  // document ids in `map` are per-scene and re-derived from this by the Board client).
+  /** @type {Record<string, string>} */
+  const actors = {};
+  if (raw && typeof raw === "object" && raw.actors && typeof raw.actors === "object") {
+    for (const [k, v] of Object.entries(raw.actors)) {
+      const g = Number(k);
+      if (!Number.isFinite(g) || g <= 0) continue;
+      if (v === null || v === undefined || v === "") continue;
+      if (typeof v === "string" && v.length > 0) actors[String(g)] = v;
+    }
+  }
+
   /** @type {Record<string, string>} */
   const effects = {};
   if (raw && typeof raw === "object" && raw.effects && typeof raw.effects === "object") {
@@ -139,7 +155,7 @@ function normalizePieceAssignments(raw) {
     }
   }
 
-  return { slots, map, effects, tokenEffects };
+  return { slots, map, actors, effects, tokenEffects };
 }
 
 function notifyPieceAssignmentListeners() {
@@ -345,6 +361,25 @@ function readGridDiagonals() {
   }
 }
 
+/** De-dupes transition notifications so repeated canvasInits for one switch fire once. */
+let lastTransitionNotifiedSceneId = null;
+
+function notifySceneTransitionStart(sceneId) {
+  if (!sceneId || sceneId === lastTransitionNotifiedSceneId) return;
+  // Only a *different* scene than the one the game is showing counts as a transition — a
+  // canvasInit for the already-displayed scene (e.g. a background-field update) must not fire,
+  // because no map load follows and the game's loading cover would have nothing to dismiss it.
+  if (sceneId === state.lastSceneInfo?.sceneId) return;
+  lastTransitionNotifiedSceneId = sceneId;
+  for (const cb of state.sceneTransitionListeners) {
+    try {
+      cb(sceneId);
+    } catch (e) {
+      console.error("[board-tabletop] onSceneTransitionStart listener failed", e);
+    }
+  }
+}
+
 function notifyMapListeners(info) {
   for (const cb of state.mapListeners) {
     try {
@@ -354,6 +389,57 @@ function notifyMapListeners(info) {
     }
   }
   maybeNotifySessionReadyFromMap(info);
+}
+
+const PAUSED_DOM_ID = "board-phaser-game-paused";
+
+/**
+ * Board "Game Paused" banner. Rendered as a top-level `body` child above every game
+ * surface (Phaser #game, the halo/VFX canvas, and #ui) — a React overlay inside #ui
+ * can't win that z-order because #ui shares a stacking level with the halo canvas.
+ * Non-blocking (`pointer-events:none`); moves are frozen separately in reportGlyphState.
+ */
+function showPausedDomOverlay() {
+  if (typeof document === "undefined") return;
+  // Only the Board surface hides Foundry's own #pause banner; a plain GM/player browser
+  // keeps Foundry's banner, so don't inject ours there.
+  if (!isBoardDevice()) return;
+  if (document.getElementById(PAUSED_DOM_ID)) return;
+  const el = document.createElement("div");
+  el.id = PAUSED_DOM_ID;
+  el.setAttribute("data-board-phaser", "");
+  el.setAttribute("role", "status");
+  el.setAttribute("aria-live", "polite");
+  // Same chrome as the native modals (FoundryModalDialog / the session-loading card):
+  // black-45% backdrop, #E8E6D9 card, radius 36, soft shadow, "Kabel ITC BQ" title.
+  ensureSessionLoadingSpinnerStyle(); // idempotent — loads the Kabel ITC BQ @font-face
+  el.style.cssText = `
+    position:fixed;inset:0;z-index:2000000006;pointer-events:none;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(0,0,0,0.45);
+  `;
+  el.innerHTML = `
+    <div style="
+      padding:44px 96px;border-radius:36px;background:#e8e6d9;
+      box-shadow:0 12px 32px rgba(0,0,0,0.18);text-align:center;
+    ">
+      <p style="
+        margin:0;font-family:'Kabel ITC BQ',system-ui,sans-serif;
+        font-size:40px;font-weight:500;line-height:1.1;color:#000;
+      ">Game Paused</p>
+    </div>
+  `;
+  document.body.appendChild(el);
+}
+
+function hidePausedDomOverlay() {
+  if (typeof document === "undefined") return;
+  document.getElementById(PAUSED_DOM_ID)?.remove();
+}
+
+function applyPausedState() {
+  if (state.lastPaused) showPausedDomOverlay();
+  else hidePausedDomOverlay();
 }
 
 /** Unblock the native overlay once the scene map is known and Phaser is up. */
@@ -405,8 +491,8 @@ function ensurePhaserGameRunning() {
 }
 
 /** Relative to `/modules/board-tabletop/game/` — deploy.sh rewrites the hash. */
-const PHASER_GAME_BUNDLE = "assets/index-DfNmV7BL.js";
-const PHASER_GAME_STYLES = "assets/index-CpPfIpR3.css";
+const PHASER_GAME_BUNDLE = "assets/index-Cx0XtBaJ.js";
+const PHASER_GAME_STYLES = "assets/index-Df8zXMah.css";
 const PHASER_GAME_STYLES_LINK_ID = "board-phaser-game-styles";
 
 let cssInjectPromise = null;
@@ -581,17 +667,57 @@ function placeablesToArray(raw) {
 }
 
 /**
- * Resolve a token's underlying Actor. `linked` is true ONLY when the token's
- * "Link Actor Data" checkbox (`doc.actorLink`) is on — an unlinked token still
- * resolves a synthetic `doc.actor`, but does not represent an actual world Actor,
- * so it must not appear in the Bind Pieces (Actors) list.
+ * Resolve a token's world Actor. `linked` mirrors Foundry's "Link Actor Data"
+ * checkbox (`doc.actorLink`). Bind Pieces eligibility uses Owner ownership on the
+ * world Actor (see {@link enrichTokenSnapshotForViewer}), not `linked` alone —
+ * an unlinked token still references a world Actor via `doc.actorId`.
  * @param {*} doc
  */
 function resolveTokenLinkedActor(doc) {
   const actorId = doc?.actorId ? String(doc.actorId) : "";
-  const actor = actorId ? (doc.actor ?? game.actors?.get?.(actorId) ?? null) : null;
-  const linked = !!doc?.actorLink && !!actorId && !!actor;
-  return { actorId, actor, linked };
+  const worldActor = actorId ? (game.actors?.get?.(actorId) ?? null) : null;
+  // Prefer the world Actor; unlinked tokens also expose a synthetic `doc.actor`.
+  const actor = worldActor ?? (actorId ? (doc.actor ?? null) : null);
+  const linked = !!doc?.actorLink && !!actorId && !!worldActor;
+  return { actorId, actor, worldActor, linked };
+}
+
+/** @returns {number} */
+function ownershipOwnerLevel() {
+  return (
+    CONST.DOCUMENT_OWNERSHIP_LEVELS?.OWNER ??
+    CONST.DOCUMENT_PERMISSION_LEVELS?.OWNER ??
+    3
+  );
+}
+
+/** @param {*} user @param {*} actor */
+function userOwnsActor(user, actor) {
+  if (!user || !actor) return false;
+  try {
+    return !!actor.testUserPermission(user, ownershipOwnerLevel());
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Annotate each token with whether the *local* Foundry user has OWNER on its
+ * world Actor. Bind Pieces (on the Board client) uses this instead of Link Actor Data.
+ * @param {ReturnType<typeof readTokensFromCanvas> | null} data
+ */
+function enrichTokenSnapshotForViewer(data) {
+  if (!data?.tokens) return data;
+  const user = game.user;
+  const tokens = data.tokens.map((t) => {
+    const actorId = t.actorId ? String(t.actorId) : "";
+    const actor = actorId ? (game.actors?.get?.(actorId) ?? null) : null;
+    return {
+      ...t,
+      actorOwnedByMe: userOwnsActor(user, actor),
+    };
+  });
+  return { ...data, tokens };
 }
 
 /** @param {*} actor */
@@ -600,18 +726,23 @@ function readActorHpLabel(actor) {
   const sys = actor.system;
   const hp = sys.attributes?.hp ?? sys.resources?.hp ?? sys.hp;
   if (!hp || typeof hp !== "object") return null;
-  const value = Number(hp.value ?? hp.current);
+  // Foundry often leaves value as `null` when HP isn't used; `Number(null)` is 0.
+  const raw = hp.value ?? hp.current;
+  if (raw == null || raw === "") return null;
+  const value = Number(raw);
   if (!Number.isFinite(value)) return null;
   const max = Number(hp.max);
   if (Number.isFinite(max) && max > 0) {
     return `${Math.round(value)}/${Math.round(max)}`;
   }
+  // Bare `0` with no max is almost always an unused HP track — omit it.
+  if (value === 0) return null;
   return String(Math.round(value));
 }
 
-/** @param {*} actor @param {*} doc @param {boolean} actorLinked */
-function representedActorDisplayName(actor, doc, actorLinked) {
-  if (actorLinked && actor?.name) {
+/** @param {*} actor @param {*} doc @param {boolean} useActorName */
+function representedActorDisplayName(actor, doc, useActorName) {
+  if (useActorName && actor?.name) {
     const fromActor = String(actor.name).trim();
     if (fromActor) return fromActor;
   }
@@ -631,7 +762,7 @@ function readTokensFromCanvas() {
     try {
       const doc = token?.document;
       if (!doc) continue;
-      const { actorId: linkedActorId, actor, linked: actorLinked } =
+      const { actorId, actor, worldActor, linked: actorLinked } =
         resolveTokenLinkedActor(doc);
       const isCharacter = actor?.type === "character";
       if (!isCharacter && doc.hidden) continue;
@@ -639,6 +770,9 @@ function readTokensFromCanvas() {
       if (!img) continue;
       const wPx = (doc.width ?? 1) * gs;
       const hPx = (doc.height ?? 1) * gs;
+      // Always export world actorId when present so Bind can key Ownership → Board
+      // Owner without requiring Link Actor Data.
+      const exportActorId = worldActor ? actorId : "";
       // This runs ONLY on the GM (refreshTokensBridge is GM-gated), where the PIXI ticker is
       // GM-gated export: `doc.x/y` is the committed token position (updates snap instantly on
       // piece drag / lift-and-place — no Foundry token.animate tween).
@@ -650,17 +784,15 @@ function readTokensFromCanvas() {
         h: hPx,
         rotation: doc.rotation ?? 0,
         img,
-        name: representedActorDisplayName(actor, doc, actorLinked),
-        // Only linked tokens carry an actorId — unlinked tokens must not group
-        // with (or resolve to) the real Actor during Bind-by-Actor dedup.
-        actorId: actorLinked ? linkedActorId : "",
+        name: representedActorDisplayName(actor, doc, !!exportActorId),
+        actorId: exportActorId,
         actorLinked,
         actorType: actor?.type ?? "",
         subtitle: tokenSubtitle(actor, doc),
         disposition: tokenDispositionLabel(doc),
         mirror: !!(doc.texture?.mirrorX),
         elevation: Number(doc.elevation) || 0,
-        hp: actorLinked && actor ? readActorHpLabel(actor) : null,
+        hp: worldActor ? readActorHpLabel(worldActor) : null,
       });
     } catch (err) {
       debugLog("token export failed", err);
@@ -687,20 +819,22 @@ function notifyTokenListeners(data) {
 
 /**
  * Apply a token snapshot to the bridge (and notify Phaser listeners).
+ * Ownership is annotated for the local user so Bind Pieces can filter by Owner.
  * @param {ReturnType<typeof readTokensFromCanvas>} data
  */
 function applyTokenSnapshot(data) {
   if (!data) return;
-  const ser = JSON.stringify(data);
+  const enriched = enrichTokenSnapshotForViewer(data);
+  const ser = JSON.stringify(enriched);
   const unchanged = ser === state.lastTokenSnapshotSerialized;
   if (unchanged) return;
   state.lastTokenSnapshotSerialized = ser;
-  state.lastTokenSnapshot = data;
+  state.lastTokenSnapshot = enriched;
   debugLog("applyTokenSnapshot", {
-    count: data.tokens?.length ?? 0,
-    sceneId: data.sceneId,
+    count: enriched.tokens?.length ?? 0,
+    sceneId: enriched.sceneId,
   });
-  notifyTokenListeners(data);
+  notifyTokenListeners(enriched);
 }
 
 /** GM reads the scene and pushes a full token list to Board clients. */
@@ -1046,6 +1180,14 @@ function scheduleFogEmit() {
  * ========================================================================== */
 
 function refreshSceneBridge() {
+  // Board clients: don't hand the game a new map while Foundry is still drawing the scene. The
+  // canvasInit-time notify made Phaser's native-res decode run concurrently with PIXI's — for a
+  // large map that is two >200MB decode transients at the same instant, which is what kept
+  // OOM-killing the renderer even after the cache itself was bounded. Holding the notify until
+  // canvasReady serializes the two decodes (canvasReady also unloads Foundry's copy first), so
+  // the peak is max(the two) instead of their sum. The watchdog re-runs this until it passes;
+  // the empty-world path (no scene at all) is deliberately not gated.
+  if (isBoardDevice() && canvas?.scene && !canvas.ready) return;
   const info = readActiveSceneMap();
   if (!info) {
     debugLog("Scene bridge refresh: map info unavailable", {
@@ -1183,20 +1325,24 @@ function installGmPointerTracking() {
 }
 
 /**
- * Placed "character" (PC) tokens on the current scene — not tied to who is logged in, so
- * a shared Board works for a group watching one screen. Sorted A–Z by token name: 1st glyph
- * placed → first name in that order, etc. (round-robin if more placements than tokens).
+ * Placed "character" (PC) tokens on the current scene that at least one non-GM
+ * user Owns — used for zero-config glyph→token auto-assign. Ownership (not
+ * Link Actor Data) matches Bind Pieces eligibility.
  */
 function getBindablePcTokenIds() {
   if (!canvas?.ready || !canvas.tokens?.placeables) return [];
+  const players = (game.users?.contents ?? game.users ?? []).filter?.(
+    (u) => u && !u.isGM,
+  ) ?? [];
   const rows = [];
   for (const t of canvas.tokens.placeables) {
     const doc = t?.document;
     if (!doc || doc.hidden) continue;
-    const { actorId, actor, linked } = resolveTokenLinkedActor(doc);
-    if (!linked || !actor) continue;
-    if (actor.type !== "character") continue;
-    const name = (doc.name || actor.name || "").trim();
+    const { actorId, worldActor } = resolveTokenLinkedActor(doc);
+    if (!worldActor || worldActor.type !== "character") continue;
+    const ownedByPlayer = players.some((u) => userOwnsActor(u, worldActor));
+    if (!ownedByPlayer) continue;
+    const name = (doc.name || worldActor.name || "").trim();
     rows.push({ id: doc.id, name: name || doc.id });
   }
   rows.sort((a, b) =>
@@ -1787,6 +1933,48 @@ function installGlobalBridge() {
       cb(state.lastSceneInfo);
       return () => state.mapListeners.delete(cb);
     },
+    /**
+     * Fires the moment a scene switch begins (canvasInit), well before the map info resolves —
+     * Foundry's transition, the bridge's dimension retries and the game-side debounce add up to
+     * a visible gap in which the old scene would otherwise stay on screen. Edge event: no replay
+     * of a "current" value on subscribe.
+     */
+    onSceneTransitionStart(cb) {
+      state.sceneTransitionListeners.add(cb);
+      return () => state.sceneTransitionListeners.delete(cb);
+    },
+    /**
+     * The decoded pixels of the current scene's background, straight from PIXI's texture cache.
+     * The game and Foundry share one page, so the game can tile from this source directly and
+     * skip its own fetch + native-resolution decode — the decode was the dominant transient of a
+     * scene switch, and running it twice (PIXI + Phaser) concurrently is what OOM-killed the
+     * renderer on large maps. Null when the texture isn't loaded/valid (the game falls back to
+     * its own URL load). The object stays owned by PIXI: the game must NOT close/destroy it, and
+     * must call consumeSceneArt() when done tiling so the module can unload it.
+     */
+    getSceneBackgroundImageSource() {
+      try {
+        const base = canvas?.primary?.background?.texture?.baseTexture ?? null;
+        const source = base?.resource?.source ?? null;
+        if (!base?.valid || !source) return null;
+        const width =
+          source.naturalWidth ?? source.width ?? base.realWidth ?? 0;
+        const height =
+          source.naturalHeight ?? source.height ?? base.realHeight ?? 0;
+        if (!width || !height) return null;
+        return { sceneId: canvas?.scene?.id ?? null, source, width, height };
+      } catch (_) {
+        return null;
+      }
+    },
+    /** Game is done tiling the current scene — Foundry's copy of the big art can be unloaded. */
+    consumeSceneArt(sceneId) {
+      try {
+        consumeSceneArtNow(sceneId ?? null);
+      } catch (e) {
+        console.warn("[board-tabletop] consumeSceneArt failed", e);
+      }
+    },
     getGmCursor() {
       return state.lastGmCursor;
     },
@@ -1796,11 +1984,11 @@ function installGlobalBridge() {
       return () => state.cursorListeners.delete(cb);
     },
     getTokens() {
-      return state.lastTokenSnapshot;
+      return enrichTokenSnapshotForViewer(state.lastTokenSnapshot);
     },
     onTokensChange(cb) {
       state.tokenListeners.add(cb);
-      cb(state.lastTokenSnapshot);
+      cb(enrichTokenSnapshotForViewer(state.lastTokenSnapshot));
       return () => state.tokenListeners.delete(cb);
     },
     getFogUpdate() {
@@ -1850,6 +2038,8 @@ function installGlobalBridge() {
     },
     reportGlyphState(payload) {
       try {
+        // Freeze piece moves while the game is paused — drop reports so tokens don't move.
+        if (state.lastPaused) return;
         if (!game?.socket) return;
         game.socket.emit(SOCKET_EVENT, {
           type: "glyphToFoundry",
@@ -2027,16 +2217,54 @@ const SESSION_LOADING_SUBTITLE_CONNECTING = "Connecting to server...";
 const SESSION_LOADING_INITIAL_MILESTONE = "Loading Scene";
 const SESSION_LOADING_MILESTONE_EVENT = "board-phaser-loading-milestone";
 
+/** Strip directory, query string and file extension from a URL → readable file name. */
+function boardSceneImageNameFromUrl(url) {
+  if (!url || typeof url !== "string") return "";
+  try {
+    const clean = url.split("?")[0].split("#")[0];
+    const parts = clean.split("/");
+    let base = parts[parts.length - 1] || "";
+    try {
+      base = decodeURIComponent(base);
+    } catch (_) {
+      /* keep raw base */
+    }
+    return base.replace(/\.[a-z0-9]+$/i, "").trim();
+  } catch (_) {
+    return "";
+  }
+}
+
+/** Name of the active scene's background image, if any (for the loading subtitle). */
+function getActiveSceneImageName() {
+  try {
+    const src =
+      game?.scenes?.active?.background?.src ||
+      (typeof canvas !== "undefined" ? canvas?.scene?.background?.src : "") ||
+      game?.scenes?.current?.background?.src ||
+      "";
+    return boardSceneImageNameFromUrl(src);
+  } catch (_) {
+    return "";
+  }
+}
+
+/** "Loading <scene image name>" while a scene loads (falls back when unknown). */
+function sceneLoadingLabel() {
+  const name = getActiveSceneImageName();
+  return name ? `Loading ${name}` : SESSION_LOADING_INITIAL_MILESTONE;
+}
+
 function parseFoundryLoadingMilestone(message) {
   if (!message || typeof message !== "string") return null;
   const text = message.trim();
   if (!text) return null;
-  if (/\bViewing Scene\b/i.test(text)) return "Loading Scene";
+  if (/\bViewing Scene\b/i.test(text)) return sceneLoadingLabel();
   if (/\bLoading Assets\b/i.test(text) || /\bLoading \d+ assets?\b/i.test(text)) {
-    return "Loading Assets";
+    return sceneLoadingLabel();
   }
   const canvasGroup = text.match(/\bDrawing the (\w+)CanvasGroup canvas group\b/i);
-  if (canvasGroup?.[1]) return `Preparing the ${canvasGroup[1]}`;
+  if (canvasGroup?.[1]) return sceneLoadingLabel();
   return null;
 }
 
@@ -2044,7 +2272,7 @@ function getSessionLoadingMilestone() {
   const stored = globalThis.__boardPhaserLoadingMilestone;
   return typeof stored === "string" && stored.length > 0
     ? stored
-    : SESSION_LOADING_INITIAL_MILESTONE;
+    : sceneLoadingLabel();
 }
 
 function setSessionLoadingMilestone(subtitle) {
@@ -2099,7 +2327,7 @@ function installFoundryLoadingMilestoneTracker() {
     };
   }
 
-  Hooks.on("viewScene", () => setSessionLoadingMilestone("Loading Scene"));
+  Hooks.on("viewScene", () => setSessionLoadingMilestone(sceneLoadingLabel()));
 }
 
 const SESSION_LOADING_DOM_ID = "board-phaser-session-loading";
@@ -2108,7 +2336,9 @@ const SESSION_PLAYER_LOGGED_IN_EVENT = "board-phaser-player-logged-in";
 const SESSION_LOADING_SUBTITLE_CLASS = "board-phaser-session-subtitle";
 const SESSION_LOADING_TITLE_CLASS = "board-phaser-session-title";
 const SESSION_LOADING_CANCEL_CLASS = "board-phaser-session-cancel";
-const SESSION_LOADING_BACKDROP = "rgba(0,0,0,0.7)";
+// DEBUG off (production): fully opaque black so the raw Foundry WebView is never
+// visible behind the loading card. DEBUG on: translucent so we can see boot state.
+const SESSION_LOADING_BACKDROP = DEBUG ? "rgba(0,0,0,0.7)" : "#000";
 const SESSION_LOADING_FONT_BASE = `/modules/${MODULE_ID}/game/fonts`;
 const SESSION_LOADING_SPINNER_STYLE_ID = "board-phaser-session-loading-spin";
 /** Must match Playtable FoundryNavigation.BOARD_VTT_EXIT_WORLD_URI */
@@ -2230,6 +2460,13 @@ function cancelSessionLoadingAndReturnHome() {
 
 function showSessionLoadingDomOverlay() {
   if (window.__boardPhaserSessionReady === true) return;
+  // Once the Phaser bundle mounts, React renders its own "Foundry Session Loading"
+  // card. Don't stack this module-drawn card behind it (that was the phantom
+  // "second popup") — remove any existing node and stop re-creating it.
+  if (window.__boardPhaserReactLoadingOverlayActive === true) {
+    document.getElementById(SESSION_LOADING_DOM_ID)?.remove();
+    return;
+  }
   if (document.getElementById(SESSION_LOADING_DOM_ID)) {
     if (window.__boardPhaserPlayerLoggedIn === true) {
       updateSessionLoadingDomSubtitle(getSessionLoadingMilestone());
@@ -2480,6 +2717,325 @@ function disableFoundryCanvasInteraction() {
     debugLog("Foundry canvas interaction disabled (board input drives the game)");
   } catch (e) {
     debugLog("disableFoundryCanvasInteraction failed", { err: String(e) });
+  }
+}
+
+/**
+ * Texture sources of the scene currently on screen. Recomputed on every canvasReady; whatever was
+ * in here and is *not* in the new scene's set is what gets unloaded.
+ *
+ * This deliberately does not try to read the "outgoing" scene at canvasInit — that hook already
+ * reports the incoming scene in `canvas.scene`, so comparing there yields a set against itself and
+ * releases nothing.
+ */
+let boardDisplayedSceneTextures = new Set();
+
+/**
+ * How long an unused Foundry texture may sit in the cache on the board.
+ *
+ * Deliberately ~immediate rather than a grace period. expireCache is called with an explicit
+ * `exclude` set covering the scene currently on screen, so age is redundant protection — anything
+ * the TTL would have spared is either already excluded or genuinely unused. A 60s value was tried
+ * first and measured on the board: it fired on only 1 of 6 scene switches (freeing 261MB that
+ * once), because switches come every 3-5s and nothing is ever old enough to qualify. The cache
+ * still climbed to 892MB and the renderer was OOM-killed. Time-gating the sweep when the pressure
+ * is switch-driven simply does not work here.
+ */
+const BOARD_TEXTURE_CACHE_TTL_MS = 1_000;
+
+/**
+ * Enumerate the heavyweight texture sources a scene pulls in — background/foreground art, tiles
+ * and token art. Deliberately a subset of Foundry's own loadSceneTextures list: control icons and
+ * status effects are small, shared across every scene, and re-fetching them would cost more than
+ * it saves.
+ */
+function collectSceneTextureSources(scene) {
+  const out = new Set();
+  if (!scene) return out;
+  try {
+    for (const kind of ["background", "foreground"]) {
+      const a = getLevelTextureSrcFromDocs(scene, kind);
+      const b = getLevelTextureSrcFromSource(scene, kind);
+      if (a) out.add(a);
+      if (b) out.add(b);
+    }
+    const srcBg = scene?._source?.background?.src;
+    const srcImg = scene?._source?.img;
+    if (srcBg) out.add(srcBg);
+    if (srcImg) out.add(srcImg);
+    for (const t of scene.tiles ?? []) {
+      if (t?.texture?.src) out.add(t.texture.src);
+    }
+    for (const t of scene.tokens ?? []) {
+      if (t?.texture?.src) out.add(t.texture.src);
+    }
+  } catch (e) {
+    debugLog("collectSceneTextureSources failed", { err: String(e) });
+  }
+  return out;
+}
+
+/**
+ * Release the previous scene's artwork once the new scene has drawn.
+ *
+ * Foundry's TextureLoader sizes its cache off `canvas.performance.mode`: ~1.7 GB at its *lowest*
+ * setting, ~6.8 GB at the HIGH default (TextureLoader.#MEMORY_LIMITS), against a board with 3.3 GB
+ * of total system RAM. So the memory ceiling is never reached and nothing is ever evicted. The TTL
+ * sweep only considers assets untouched for 15 minutes, which a scene-switching session never
+ * reaches, and neutralizeFoundryCanvas() stops the ticker, which also disables PIXI's own
+ * ticker-driven texture GC. Every scene change therefore added ~50-150 MB that was never given
+ * back until lowmemorykiller took the WebView renderer down with it.
+ *
+ * An earlier attempt stubbed TextureLoader so nothing was ever loaded. That did stop the growth,
+ * but Foundry's Canvas#draw threw partway through on the resulting null textures, so
+ * `canvas.pendingRenderFlags` and `canvas.visibility.vision` were never created — tokens still
+ * synced (they are document-driven) but fog and vision were dead and every later render-flag set
+ * threw. Hence this approach instead: let Foundry draw normally and reclaim afterwards, using only
+ * the public PIXI.Assets.unload so the draw path is never touched.
+ */
+/** The scene's heavyweight non-token art: background, foreground, tiles. */
+function collectSceneBigArtSources(scene) {
+  const out = new Set();
+  if (!scene) return out;
+  try {
+    for (const kind of ["background", "foreground"]) {
+      const a = getLevelTextureSrcFromDocs(scene, kind);
+      const b = getLevelTextureSrcFromSource(scene, kind);
+      if (a) out.add(a);
+      if (b) out.add(b);
+    }
+    const srcBg = scene?._source?.background?.src;
+    const srcImg = scene?._source?.img;
+    if (srcBg) out.add(srcBg);
+    if (srcImg) out.add(srcImg);
+    for (const t of scene.tiles ?? []) {
+      if (t?.texture?.src) out.add(t.texture.src);
+    }
+  } catch (e) {
+    debugLog("collectSceneBigArtSources failed", { err: String(e) });
+  }
+  return out;
+}
+
+async function releasePreviousSceneTextures(phase) {
+  const mb = (b) => (typeof b === "number" ? (b / 1048576).toFixed(1) : "?");
+  const TextureLoader = globalThis.foundry?.canvas?.TextureLoader;
+  if (!TextureLoader?.loader) return;
+
+  const usage = () => {
+    try {
+      return TextureLoader.approximateTotalMemoryUsage;
+    } catch (_) {
+      return undefined;
+    }
+  };
+  const before = usage();
+
+  // Keep whatever the scene now on screen needs; everything else is fair game. expireCache walks
+  // Foundry's own cache bookkeeping, so it covers assets this module never enumerates (door
+  // textures, control icons, status effects) rather than only the ones we can name.
+  const keep = collectSceneTextureSources(canvas?.scene);
+  boardDisplayedSceneTextures = keep;
+
+  try {
+    await TextureLoader.loader.expireCache({ exclude: keep });
+  } catch (e) {
+    console.warn("[board-tabletop mem] expireCache failed", e);
+  }
+
+  const after = usage();
+  // Unconditional (not debugLog, which is compiled out by DEBUG=false) — this is the only
+  // instrument we have for whether the board's texture memory is actually being reclaimed.
+  console.info(
+    `[board-tabletop mem] scene texture release (${phase}): kept ${keep.size} sources` +
+      ` | Foundry cache ${mb(before)}MB -> ${mb(after)}MB` +
+      ` (freed ${mb((before ?? 0) - (after ?? 0))}MB, ttl=${TextureLoader.CACHE_TTL}ms)`,
+  );
+}
+
+/**
+ * Once the scene has drawn, the hidden Foundry canvas no longer needs its own copy of the big
+ * art — the board renders the map from Phaser's tiles, Foundry's ticker is stopped and its
+ * canvas display:none, so the just-drawn background/foreground/tile textures are never rendered
+ * again. They are also the dominant residency: a native-res background alone is 100-400MB
+ * decoded. Token art stays — Foundry's document-update paths still touch it, and it's small.
+ *
+ * NOT run at canvasReady directly: the game tiles its map straight from PIXI's decoded source
+ * (see getSceneBackgroundImageSource on the bridge), so unloading here would close the bitmap
+ * mid-tiling. The game calls consumeSceneArt() when its tiles are built; a fallback timer covers
+ * paths where no consume ever arrives (load failure, scene with no board client active).
+ */
+let sceneArtFallbackTimer = null;
+
+async function releaseCurrentSceneBigArt(reason) {
+  const mb = (b) => (typeof b === "number" ? (b / 1048576).toFixed(1) : "?");
+  const TextureLoader = globalThis.foundry?.canvas?.TextureLoader;
+  const usage = () => {
+    try {
+      return TextureLoader?.approximateTotalMemoryUsage;
+    } catch (_) {
+      return undefined;
+    }
+  };
+  const before = usage();
+  let dropped = 0;
+  for (const src of collectSceneBigArtSources(canvas?.scene)) {
+    try {
+      await PIXI.Assets.unload(src);
+      dropped++;
+    } catch (_) {
+      // Miss is fine — not every recorded source necessarily entered PIXI's cache.
+    }
+  }
+  if (dropped) {
+    console.info(
+      `[board-tabletop mem] big-art release (${reason}): dropped ${dropped}` +
+        ` | Foundry cache ${mb(before)}MB -> ${mb(usage())}MB`,
+    );
+  }
+}
+
+function armSceneArtFallbackRelease(sceneId) {
+  if (sceneArtFallbackTimer) clearTimeout(sceneArtFallbackTimer);
+  sceneArtFallbackTimer = setTimeout(() => {
+    sceneArtFallbackTimer = null;
+    // Only fire for the scene it was armed for — after a further switch the canvasInit sweep
+    // already handled the old art, and this must not unload the NEW scene's mid-load bitmap.
+    if (canvas?.scene?.id !== sceneId) return;
+    void releaseCurrentSceneBigArt("fallback-timer");
+  }, 20_000);
+}
+
+function consumeSceneArtNow(sceneId) {
+  // A stale consume (game finished tiling scene A after the GM already switched to scene B) must
+  // not unload B's art mid-load; A's art is handled by the canvasInit sweep of the next switch.
+  if (sceneId && canvas?.scene?.id !== sceneId) return;
+  if (sceneArtFallbackTimer) {
+    clearTimeout(sceneArtFallbackTimer);
+    sceneArtFallbackTimer = null;
+  }
+  void releaseCurrentSceneBigArt("consumed-by-game");
+}
+
+/**
+ * Foundry expires cached textures only after they have gone untouched for CACHE_TTL, which ships
+ * as 15 minutes — far longer than a scene-switching session ever idles, so the sweep never fires.
+ * Its other eviction path is a memory ceiling derived from canvas.performance.mode, and even the
+ * LOW setting is ~1.7 GB against this board's 3.3 GB of total RAM, so that never triggers either.
+ * Measured on the board, the cache climbed 0 -> 1528 MB over ~12 scene switches and the WebView
+ * renderer was OOM-killed ("kill (OOM or update)") before Foundry considered evicting anything.
+ *
+ * CACHE_TTL is a writable public static, so shortening it is enough to make the existing sweep do
+ * its job on each scene change. 60s is comfortably longer than a transition, so the scene being
+ * drawn is never a candidate, while anything left from earlier scenes is.
+ */
+/**
+ * Cap how many textures Foundry fetches+decodes at once. Canvas#draw loads every scene source in
+ * one unbounded Promise.allSettled burst — a tile-heavy scene (Map7p2: 19 sources incl. a
+ * 6300x8190 background) meant several hundred MB of concurrent decode transients. The WebView
+ * renderer is a 32-bit process ("ABI: arm" in its crash dumps), so after a few big-map cycles its
+ * fragmented address space fails one of those allocations and Chromium OOM-aborts (SIGTRAP) even
+ * with system RAM free. loadSceneTextures already supports maxConcurrent; Foundry just never
+ * sets it. 2 keeps small assets pipelined while ensuring at most two decodes coexist.
+ */
+function limitFoundryTextureLoadConcurrency(TextureLoader) {
+  if (globalThis.__boardPhaserTextureConcurrencyLimited) return;
+  if (typeof TextureLoader?.loadSceneTextures !== "function") return;
+  try {
+    const orig = TextureLoader.loadSceneTextures.bind(TextureLoader);
+    TextureLoader.loadSceneTextures = (scene, options = {}) =>
+      orig(scene, { maxConcurrent: 2, ...options });
+    globalThis.__boardPhaserTextureConcurrencyLimited = true;
+    console.info("[board-tabletop] Foundry texture load concurrency capped at 2");
+  } catch (e) {
+    console.warn("[board-tabletop] limitFoundryTextureLoadConcurrency failed", e);
+  }
+}
+
+function tightenFoundryTextureCacheTtl() {
+  try {
+    const TextureLoader = globalThis.foundry?.canvas?.TextureLoader;
+    if (!TextureLoader) return;
+    pinSharedFoundryTextures(TextureLoader);
+    limitFoundryTextureLoadConcurrency(TextureLoader);
+    if (TextureLoader.CACHE_TTL <= BOARD_TEXTURE_CACHE_TTL_MS) return;
+    TextureLoader.CACHE_TTL = BOARD_TEXTURE_CACHE_TTL_MS;
+    console.info(
+      `[board-tabletop] Foundry texture CACHE_TTL tightened to ${BOARD_TEXTURE_CACHE_TTL_MS}ms`,
+    );
+  } catch (e) {
+    console.warn("[board-tabletop] tightenFoundryTextureCacheTtl failed", e);
+  }
+}
+
+/**
+ * Pin the small assets Foundry shares across every scene — control icons, status effect icons and
+ * the token ring spritesheet. They are individually tiny but numerous, and with the near-immediate
+ * TTL above they would otherwise be evicted and re-fetched on every single scene change. pinSource
+ * is Foundry's own mechanism for this and expireCache skips pinned entries, so the sweep is left
+ * to reclaim only the large per-scene artwork that actually drives the memory growth.
+ */
+function pinSharedFoundryTextures(TextureLoader) {
+  if (globalThis.__boardPhaserSharedTexturesPinned) return;
+  if (typeof TextureLoader?.pinSource !== "function") return;
+  let pinned = 0;
+  const pin = (src) => {
+    if (typeof src !== "string" || !src) return;
+    try {
+      TextureLoader.pinSource(src);
+      pinned++;
+    } catch (_) {
+      /* best-effort */
+    }
+  };
+  try {
+    for (const src of Object.values(CONFIG?.controlIcons ?? {})) pin(src);
+    for (const e of Object.values(CONFIG?.statusEffects ?? {})) pin(e?.img);
+    pin(CONFIG?.Token?.ring?.spritesheet);
+    globalThis.__boardPhaserSharedTexturesPinned = true;
+    console.info(`[board-tabletop] pinned ${pinned} shared Foundry textures`);
+  } catch (e) {
+    console.warn("[board-tabletop] pinSharedFoundryTextures failed", e);
+  }
+}
+
+/**
+ * Unconditional memory sample. `TextureLoader.approximateTotalMemoryUsage` only accounts for
+ * Foundry's own texture cache; `performance.memory` (Chromium-only) covers the JS heap, which is
+ * where a Phaser-side leak would show instead. Logging both lets one scene-switch trace attribute
+ * the growth to a side rather than leaving it to inference.
+ */
+function logBoardMemorySample(label) {
+  try {
+    const mb = (b) => (typeof b === "number" ? (b / 1048576).toFixed(1) : "?");
+    const tex = globalThis.foundry?.canvas?.TextureLoader?.approximateTotalMemoryUsage;
+    const perf = performance?.memory;
+    console.info(
+      `[board-tabletop mem] ${label} | foundryTextures=${mb(tex)}MB` +
+        ` jsHeap=${mb(perf?.usedJSHeapSize)}/${mb(perf?.totalJSHeapSize)}MB` +
+        ` limit=${mb(perf?.jsHeapSizeLimit)}MB` +
+        ` scene=${canvas?.scene?.id ?? "none"}`,
+    );
+  } catch (e) {
+    console.warn("[board-tabletop mem] sample failed", e);
+  }
+}
+
+/**
+ * Foundry sizes several caches and effects off `canvas.performance.mode`, which it auto-detects
+ * from the GPU and happily reports as HIGH on this board's Mali. LOW additionally turns off linear
+ * filtering by default and reduces blur work. Applied on every canvasInit because Foundry
+ * recomputes the mode when it reconfigures the canvas.
+ */
+function forceLowCanvasPerformanceMode() {
+  try {
+    const low = CONST?.CANVAS_PERFORMANCE_MODES?.LOW;
+    if (low === undefined || !canvas?.performance) return;
+    if (canvas.performance.mode === low) return;
+    canvas.performance.mode = low;
+    debugLog("Foundry canvas performance mode forced to LOW");
+  } catch (e) {
+    debugLog("forceLowCanvasPerformanceMode failed", { err: String(e) });
   }
 }
 
@@ -2869,6 +3425,9 @@ function installBoardWorldExitNotifier() {
 
 Hooks.once("ready", () => {
   game.socket.on(SOCKET_EVENT, onSocketData);
+  // Seed pause state so a Board connecting into an already-paused world shows it.
+  state.lastPaused = !!game.paused;
+  applyPausedState();
   try {
     cachedPieceAssignments = normalizePieceAssignments(
       game.settings.get(MODULE_ID, "pieceAssignments") ?? {},
@@ -2918,6 +3477,19 @@ Hooks.on("renderUserConfig", (app, html) => {
 Hooks.on("canvasReady", () => {
   debugLog("Hook: canvasReady", { sceneId: canvas?.scene?.id ?? null });
   setBootStage("canvas_ready");
+  if (shouldMountPhaser()) {
+    // Unload Foundry's copy of the scene art FIRST, then let the (gated) bridge refresh hand the
+    // map to Phaser — this is the serialization that keeps the two native-res decodes from ever
+    // coexisting. The refresh below is scheduled with a delay, so kicking the unload off here is
+    // enough ordering; a second refresh is chained after the unload settles as a belt-and-braces.
+    void releasePreviousSceneTextures("canvasReady").then(() => {
+      logBoardMemorySample("canvasReady (settled)");
+      scheduleSceneBridgeRefresh();
+    });
+    // Big art is released when the game reports its tiles are built (consumeSceneArt), or by
+    // this fallback if that never happens.
+    armSceneArtFallbackRelease(canvas?.scene?.id ?? null);
+  }
   try {
     sceneTransitioning = true;
     scheduleSceneBridgeRefresh();
@@ -2952,6 +3524,23 @@ Hooks.on("sightRefresh", () => {
 /* Scene initialization (fires when the canvas is prepared for a scene). */
 Hooks.on("canvasInit", () => {
   debugLog("Hook: canvasInit", { sceneId: canvas?.scene?.id ?? null });
+  if (shouldMountPhaser()) {
+    logBoardMemorySample("canvasInit");
+    // Earliest reliable signal that a scene switch is underway (canvas.scene here is already the
+    // incoming scene) — tell the game now so it can cover the stage instead of leaving the old
+    // scene on screen through Foundry's transition + bridge retries + debounce.
+    notifySceneTransitionStart(canvas?.scene?.id ?? null);
+    // Evict the OUTGOING scene's art NOW, before Foundry downloads the incoming scene's. The
+    // canvasReady sweep ran after the new art had loaded, so at the moment of every switch the
+    // old scene's 400-600MB coexisted with two native-res decodes of the new background (PIXI +
+    // Phaser). That transient peak — not steady-state growth — is what OOM-killed the renderer
+    // while loading a large map. Everything of the old scene is >1s idle here, so the TTL sweep
+    // takes all of it; the incoming scene's sources are excluded and unaffected.
+    void releasePreviousSceneTextures("canvasInit");
+    // Re-applied here because Foundry reconstructs the loader state across scene changes.
+    tightenFoundryTextureCacheTtl();
+    forceLowCanvasPerformanceMode();
+  }
   sceneTransitioning = true;
   scheduleSceneBridgeRefresh();
   scheduleTokensRefresh();
@@ -2979,6 +3568,14 @@ Hooks.on("updateScene", (scene) => {
     debugLog("Hook: updateScene (active)", { sceneId: scene.id });
     debouncedActiveSceneUpdate();
   }
+});
+
+/* Server-wide pause toggled (fires on every client, GM or not). On the Board, show our
+   own "Game Paused" banner and freeze piece moves (reportGlyphState checks state.lastPaused). */
+Hooks.on("pauseGame", (paused) => {
+  state.lastPaused = !!paused;
+  debugLog("Hook: pauseGame", { paused: state.lastPaused });
+  applyPausedState();
 });
 
 ["updateToken", "createToken", "deleteToken", "refreshToken", "updateActor"].forEach((name) => {

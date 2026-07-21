@@ -8,7 +8,21 @@
     />
     <title>Board Phaser Game</title>
     <style>
-      * { margin: 0; padding: 0; box-sizing: border-box; }
+      * {
+        margin: 0; padding: 0; box-sizing: border-box;
+        /* No text selection, tap-highlight flash, long-press callout, or element drag.
+           !important for parity with theme.css (which needs it to beat Foundry's CSS). */
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        user-select: none !important;
+        -webkit-user-drag: none !important;
+      }
+      /* Real form fields opt back into selection/editing. */
+      input, textarea, [contenteditable="true"] {
+        -webkit-user-select: text !important; -moz-user-select: text !important; user-select: text !important;
+      }
       html, body {
         width: 100%; height: 100%; overflow: hidden; background: #fff8e0;
         /* No rubber-band / pull-to-refresh, and no WebView text auto-inflation. */
@@ -21,10 +35,10 @@
       #ui { position: absolute; inset: 0; pointer-events: none; }
       #ui > * { pointer-events: auto; }
     </style>
-    <script type="module" crossorigin src="./assets/index-DfNmV7BL.js"></script>
+    <script type="module" crossorigin src="./assets/index-Cx0XtBaJ.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/react-vendor-_foh5iaC.js">
     <link rel="modulepreload" crossorigin href="./assets/phaser-DMjGVukU.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-CpPfIpR3.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-Df8zXMah.css">
   </head>
   <body>
     <div id="game"></div>

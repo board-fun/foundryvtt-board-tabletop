@@ -1,0 +1,100 @@
+Sorcerer_New.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+138px_Center
+bounds:210,2,83,83
+3-Idle
+bounds:210,87,168,166
+offsets:99,100,367,368
+Orb
+bounds:612,74,97,97
+Orb glow
+bounds:2,57,206,196
+Particle
+bounds:513,154,96,108
+offsets:10,4,108,115
+rotate:90
+Ring Orb
+bounds:380,154,131,99
+Rune 1
+bounds:496,57,114,95
+offsets:1,2,116,98
+Rune 2
+bounds:380,57,114,95
+offsets:1,2,116,98
+Star
+bounds:2,12,27,43
+offsets:1,3,29,47
+Stars
+bounds:2,255,687,690
+offsets:4,2,704,704
+
+Sorcerer_New_2.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Inner Ring
+bounds:2,411,386,363
+offsets:1,0,387,363
+Inner Ring Glow
+bounds:2,2,407,387
+offsets:2,3,411,392
+rotate:90
+Mid Ring
+bounds:391,242,532,523
+rotate:90
+
+Sorcerer_New_3.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Outer Ring
+bounds:2,2,669,663
+offsets:4,5,677,672
+
+Sorcerer_New_4.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Mid Ring Glow
+bounds:2,2,561,557
+offsets:1,1,563,561
+
+Sorcerer_New_5.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Aura 3
+bounds:2,2,662,663
+offsets:6,6,674,674
+
+Sorcerer_New_6.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Aura 1
+bounds:2,2,656,655
+offsets:9,10,674,674
+
+Sorcerer_New_7.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Aura 2
+bounds:2,2,656,655
+offsets:9,10,674,674

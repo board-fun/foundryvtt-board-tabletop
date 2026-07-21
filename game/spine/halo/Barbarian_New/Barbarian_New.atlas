@@ -1,0 +1,103 @@
+Barbarian_New.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+138px_Center
+bounds:526,2,83,83
+3-Idle
+bounds:2,3,172,172
+offsets:76,77,325,325
+Fire 1
+bounds:351,44,173,131
+offsets:5,6,180,150
+Fire 2
+bounds:176,44,173,131
+offsets:2,13,180,150
+Outer Ring
+bounds:2,177,686,686
+offsets:1,2,688,689
+Spark 3
+bounds:526,87,82,88
+offsets:5,5,91,96
+
+Barbarian_New_2.png
+size:512,512
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Rune 2
+bounds:2,2,454,468
+offsets:1,1,456,470
+
+Barbarian_New_3.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Crack 3
+bounds:2,2,686,682
+offsets:0,1,687,683
+
+Barbarian_New_4.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Rune 1
+bounds:2,2,574,594
+offsets:2,2,578,598
+
+Barbarian_New_5.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+line crack 1
+bounds:2,2,686,664
+offsets:0,1,687,666
+
+Barbarian_New_6.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Rune Glow
+bounds:2,2,579,599
+offsets:2,2,583,603
+
+Barbarian_New_7.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Crack 2
+bounds:2,2,667,663
+offsets:1,16,678,680
+
+Barbarian_New_8.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Ring
+bounds:2,2,629,626
+offsets:1,0,630,626
+
+Barbarian_New_9.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Crack 1
+bounds:2,2,622,663
+offsets:2,16,661,680

@@ -1,0 +1,198 @@
+Paladin_New.png
+size:1000,926
+filter:Linear,Linear
+pma:true
+scale:0.6
+Estrella 1
+bounds:235,812,112,112
+Estrella 2
+bounds:235,812,112,112
+Estrella 3
+bounds:349,812,112,112
+Estrella 4
+bounds:463,812,112,112
+Estrella media 1
+bounds:2,877,47,47
+brillo 1
+bounds:576,639,146,155
+offsets:0,0,535,519
+rotate:90
+brillo 2
+bounds:577,788,136,137
+rotate:90
+brillo 3
+bounds:860,785,139,138
+rotate:90
+brillo 4
+bounds:430,662,144,148
+brillo 5
+bounds:2,724,139,142
+rotate:90
+brillo 6
+bounds:716,787,142,137
+brillo 7
+bounds:146,671,140,139
+brillo 8
+bounds:288,670,140,140
+cruz luz 1
+bounds:51,865,90,59
+cruz luz 2
+bounds:143,865,90,59
+rayo luz 1
+bounds:569,2,282,284
+rotate:90
+rayo luz 2
+bounds:718,286,275,281
+offsets:0,0,275,284
+rayo luz 3
+bounds:285,108,282,281
+rayo luz 4
+bounds:2,142,277,281
+rotate:90
+rayo luz 5
+bounds:469,391,247,246
+offsets:0,458,247,704
+rayo luz 6
+bounds:227,421,239,240
+rotate:90
+rayo luz 7
+bounds:733,569,214,214
+rayo luz 8
+bounds:2,448,223,221
+
+Paladin_New_2.png
+size:708,708
+filter:Linear,Linear
+pma:true
+scale:0.6
+luz marco 2
+bounds:2,2,704,704
+
+Paladin_New_3.png
+size:695,700
+filter:Linear,Linear
+pma:true
+scale:0.6
+remolino1
+bounds:2,2,691,696
+offsets:0,7,691,703
+
+Paladin_New_4.png
+size:1000,644
+filter:Linear,Linear
+pma:true
+scale:0.6
+ficha
+bounds:347,2,332,332
+rayo luz 10
+bounds:2,338,304,343
+rotate:90
+rayo luz 11
+bounds:347,336,343,306
+rayo luz 12
+bounds:692,299,343,306
+rotate:90
+rayo luz 9
+bounds:2,30,306,343
+rotate:90
+
+Paladin_New_5.png
+size:672,687
+filter:Linear,Linear
+pma:true
+scale:0.6
+remolino2
+bounds:2,2,668,683
+offsets:15,21,704,704
+
+Paladin_New_6.png
+size:645,642
+filter:Linear,Linear
+pma:true
+scale:0.6
+circulo con rayos
+bounds:2,2,641,638
+
+Paladin_New_7.png
+size:632,641
+filter:Linear,Linear
+pma:true
+scale:0.6
+cruz3
+bounds:2,2,628,637
+
+Paladin_New_8.png
+size:627,1000
+filter:Linear,Linear
+pma:true
+scale:0.6
+lineas ampliacion
+bounds:2,390,623,608
+marco version luz
+bounds:2,2,386,386
+
+Paladin_New_9.png
+size:608,593
+filter:Linear,Linear
+pma:true
+scale:0.6
+puntos remolino
+bounds:2,2,604,589
+
+Paladin_New_10.png
+size:928,914
+filter:Linear,Linear
+pma:true
+scale:0.6
+cruz2
+bounds:455,464,464,448
+offsets:3,0,469,448
+luz runas
+bounds:2,468,451,444
+marco2
+bounds:2,6,456,456
+runas
+bounds:460,2,466,460
+
+Paladin_New_11.png
+size:534,534
+filter:Linear,Linear
+pma:true
+scale:0.6
+circulo luz 2
+bounds:2,2,530,530
+
+Paladin_New_12.png
+size:995,506
+filter:Linear,Linear
+pma:true
+scale:0.6
+circulo
+bounds:491,2,502,502
+cruz1
+bounds:2,39,487,465
+
+Paladin_New_13.png
+size:506,506
+filter:Linear,Linear
+pma:true
+scale:0.6
+luz marco 1
+bounds:2,2,502,502
+offsets:9,9,520,520
+
+Paladin_New_14.png
+size:513,527
+filter:Linear,Linear
+pma:true
+scale:0.6
+puntos remolino 2
+bounds:2,2,509,523
+
+Paladin_New_15.png
+size:519,519
+filter:Linear,Linear
+pma:true
+scale:0.6
+circulo luz
+bounds:2,2,515,515

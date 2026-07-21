@@ -1,0 +1,60 @@
+Monk_New.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+138px_Center
+bounds:424,86,83,83
+3-idle
+bounds:2,2,167,167
+offsets:46,52,268,273
+BgLight
+bounds:2,171,651,662
+offsets:1,8,659,673
+Candle
+bounds:384,6,22,55
+rotate:90
+Candle light
+bounds:328,54,94,115
+offsets:2,5,98,133
+Fire
+bounds:424,30,38,54
+Firefly
+bounds:441,4,25,24
+Firefly GLow
+bounds:569,48,72,73
+offsets:4,4,80,81
+Lantern 1
+bounds:485,6,83,83
+Lantern 2
+bounds:328,11,41,56
+rotate:90
+Lantern Light
+bounds:171,9,155,160
+
+Monk_New_2.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Light Ring
+bounds:2,2,502,483
+offsets:1,5,504,493
+Ring 1
+bounds:433,487,494,487
+offsets:2,2,497,491
+Ring 3
+bounds:2,537,429,437
+offsets:4,3,437,446
+
+Monk_New_3.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Ring 2
+bounds:2,2,544,543
+offsets:4,5,552,553
