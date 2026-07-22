@@ -1,0 +1,69 @@
+Generic.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+3-Idle
+bounds:2,803,1141,1142
+offsets:592,591,2326,2329
+Inner Ring 2
+bounds:2,2,801,799
+offsets:3,2,806,803
+Particle 2
+bounds:805,37,41,41
+offsets:2,2,45,45
+Ring 1
+bounds:1145,1264,681,681
+offsets:1,1,683,683
+Ring Glow
+bounds:805,80,718,721
+offsets:3,12,725,745
+
+Generic_2.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Aura 1
+bounds:2,43,919,921
+offsets:1,1,921,923
+rotate:90
+Inner Ring
+bounds:2,1223,640,642
+offsets:2,2,644,646
+Light 2
+bounds:925,2,971,959
+offsets:5,6,980,971
+Ring 2
+bounds:644,963,902,902
+offsets:1,1,904,905
+
+Generic_3.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Outer Ring 2
+bounds:2,2,1142,1140
+offsets:1,1,1144,1143
+
+Generic_4.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Light 1
+bounds:2,29,1009,1014
+offsets:7,5,1022,1023
+Outer Ring
+bounds:1013,2,1032,1041
+offsets:2,2,1036,1045
+
+Generic_5.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Light 3
+bounds:2,2,1061,1041
+offsets:6,8,1075,1055

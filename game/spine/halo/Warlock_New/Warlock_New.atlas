@@ -1,0 +1,65 @@
+warlock.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+3-Idle
+bounds:2,766,1204,1172
+offsets:573,576,2324,2324
+Chain
+bounds:1208,370,764,764
+offsets:1,1,766,766
+Chain Glow
+bounds:1208,1136,802,802
+offsets:5,6,812,814
+Inner Ring Glow
+bounds:2,2,762,762
+offsets:3,4,768,770
+Spike
+bounds:766,397,100,163
+offsets:1,2,103,166
+Spike Glow
+bounds:766,562,138,202
+offsets:2,2,145,210
+
+warlock_2.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Inner Ring
+bounds:2,1178,742,742
+offsets:2,2,745,745
+Smoke 1
+bounds:899,783,1137,1138
+offsets:16,18,1164,1175
+rotate:270
+Smoke 2
+bounds:2,2,1130,1174
+
+warlock_3.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Aura
+bounds:2,2,1172,1172
+offsets:1,1,1174,1174
+
+warlock_4.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Outer Ring Glow
+bounds:2,2,1148,1149
+offsets:13,12,1174,1174
+
+warlock_5.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Outer Ring
+bounds:2,2,1160,1160
+offsets:7,7,1174,1174

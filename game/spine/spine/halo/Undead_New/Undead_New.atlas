@@ -1,0 +1,83 @@
+undead.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+138px_Center
+bounds:672,592,83,83
+Bone Big
+bounds:672,447,98,57
+Bone Small
+bounds:672,401,52,44
+Skull 1
+bounds:672,506,100,84
+offsets:0,47,100,131
+Skull 2
+bounds:672,677,138,122
+offsets:19,11,244,153
+crack 1
+bounds:2,344,668,676
+smoke 1
+bounds:672,801,197,219
+offsets:7,2,209,227
+smoke 3
+bounds:2,2,436,340
+offsets:6,4,448,350
+smoke2
+bounds:440,37,305,248
+offsets:1,1,307,250
+rotate:90
+
+undead_2.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Inner circle 1
+bounds:2,148,402,405
+offsets:1,1,404,408
+outer Circle 1
+bounds:406,2,551,552
+offsets:2,2,556,557
+rotate:90
+
+undead_3.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+crack 2
+bounds:2,2,666,668
+offsets:1,3,668,674
+
+undead_4.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+aura
+bounds:2,2,630,629
+offsets:4,3,637,637
+
+undead_5.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+Diamond 1
+bounds:2,2,662,664
+
+undead_6.png
+size:1024,1024
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+scale:0.6
+3-Idle
+bounds:2,2,661,663
+offsets:381,398,1429,1460

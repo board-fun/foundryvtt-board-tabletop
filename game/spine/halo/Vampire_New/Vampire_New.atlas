@@ -1,0 +1,93 @@
+vampire.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+3-idle
+bounds:2,730,1140,1140
+offsets:253,269,1661,1666
+Blood 1
+bounds:677,423,262,305
+offsets:2,1,265,307
+Blood 2
+bounds:941,467,200,41
+offsets:1,1,202,43
+Blood 3
+bounds:1012,680,129,48
+offsets:1,1,131,51
+Blood 4
+bounds:1012,603,53,75
+offsets:1,2,55,80
+Blood 5
+bounds:1012,546,38,55
+offsets:3,2,42,58
+Blood 6
+bounds:941,510,69,218
+offsets:1,2,72,222
+Blood 7
+bounds:1052,547,33,54
+offsets:1,2,36,57
+Blood 8
+bounds:677,262,138,159
+offsets:2,2,141,162
+Blood Halo
+bounds:1144,946,866,924
+offsets:1,6,868,931
+Ring 1
+bounds:1143,103,841,843
+offsets:3,4,848,850
+rotate:90
+Shadow Blood
+bounds:2,89,639,673
+offsets:1,1,641,675
+rotate:90
+Wire 1
+bounds:677,181,395,207
+Wire 2
+bounds:569,2,215,207
+
+vampire_2.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Fx Blood
+bounds:2,664,540,628
+offsets:9,2,553,636
+Light Blood
+bounds:2,2,660,639
+offsets:1,1,662,641
+rotate:90
+Ring 2
+bounds:556,877,966,969
+offsets:4,3,973,976
+Token
+bounds:2,1294,552,552
+offsets:1,1,554,554
+
+vampire_3.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Halo 1
+bounds:2,2,1129,1140
+offsets:12,1,1142,1142
+
+vampire_4.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Big Ring
+bounds:2,2,1088,1089
+offsets:1,1,1090,1091
+
+vampire_5.png
+size:2048,2048
+format:RGBA4444
+filter:Linear,Linear
+pma:true
+Red Light
+bounds:2,2,1121,1134
+offsets:14,1,1140,1140

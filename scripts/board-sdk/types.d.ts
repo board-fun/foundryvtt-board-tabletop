@@ -1,0 +1,137 @@
+/** Contact type: finger touch or tracked piece (glyph). */
+export declare enum BoardContactType {
+    /** A finger touch. `glyphId` will be 0. */
+    Finger = 0,
+    /** A tracked piece (physical game piece with a glyph pattern). `glyphId` identifies the piece type. */
+    Glyph = 1
+}
+/**
+ * Contact lifecycle phase.
+ *
+ * A contact progresses Began → Moved/Stationary → Ended (or Canceled).
+ * Contacts persist across frames: a piece sitting still appears every frame
+ * with phase Stationary until it is lifted (phase Ended).
+ */
+export declare enum BoardContactPhase {
+    /** No phase reported. Not typically seen in subscriber callbacks. */
+    None = 0,
+    /** Contact was just created this frame (first appearance). */
+    Began = 1,
+    /** Contact moved since the previous frame. */
+    Moved = 2,
+    /** Contact was lifted. This is the final frame the contact appears in. */
+    Ended = 3,
+    /** Contact was canceled by the system (e.g. palm rejection). Final frame. */
+    Canceled = 4,
+    /** Contact is still present but did not move this frame. Emitted every frame until Ended. */
+    Stationary = 5
+}
+/** A single touch contact (finger or piece) on the Board surface. */
+export interface BoardContact {
+    /** Unique contact ID (stable across frames for the same physical contact). */
+    contactId: number;
+    /** X position in display pixels (0 = left edge). */
+    x: number;
+    /** Y position in display pixels (0 = top edge). */
+    y: number;
+    /** Orientation in degrees. Only meaningful for Glyph contacts. */
+    orientation: number;
+    /** Whether this is a finger or a tracked piece. */
+    type: BoardContactType;
+    /** Current lifecycle phase. */
+    phase: BoardContactPhase;
+    /** Glyph class ID. 0 = finger, 1+ = piece type. */
+    glyphId: number;
+    /** Whether the piece is being physically touched by a hand. */
+    isTouched: boolean;
+}
+/** Player type. */
+export declare enum BoardPlayerType {
+    /** A signed-in Board profile with a persistent identity across sessions. */
+    Profile = "profile",
+    /** An ephemeral guest player that exists only for the current session. */
+    Guest = "guest"
+}
+/** A player in the current session. */
+export interface BoardPlayer {
+    /** Persistent app-specific player ID. */
+    playerId: string;
+    /** Session-unique ID. */
+    sessionId: number;
+    /** Display name. */
+    name: string;
+    /** Whether this is a profile or guest player. */
+    type: BoardPlayerType;
+    /** Avatar identifier. */
+    avatarId: string;
+}
+/** Pause screen custom button configuration. */
+export interface BoardPauseButton {
+    /** Stable identifier for this button. Returned as `customButtonId` on `BoardPauseResult` when pressed. */
+    id: string;
+    /** Text shown on the button. */
+    title: string;
+    /** Icon name: "circulararrow", "doorwitharrow", "leftarrow", "square", or "" */
+    icon: string;
+}
+/** Pause screen audio track configuration. */
+export interface BoardPauseAudioTrack {
+    /** Stable identifier for this audio track. Returned on `BoardPauseResult.audioTracks` when the user adjusts the slider. */
+    id: string;
+    /** Display name shown next to the volume slider. */
+    name: string;
+    /** Volume value 0-100. */
+    value: number;
+}
+/** Pause screen configuration. */
+export interface BoardPauseContext {
+    /** Optional app/game ID. Used by the OS pause overlay to attribute the session. */
+    gameId?: string;
+    /** Display name of the game, shown in the pause menu header. */
+    gameName?: string;
+    /** Whether the pause menu should show a "Save & Quit" option in addition to "Quit". */
+    offerSaveOption?: boolean;
+    /** Custom buttons appended to the pause menu. Press events come back on `pollResult`. */
+    customButtons?: BoardPauseButton[];
+    /** Audio track volume sliders shown in the pause menu. User-adjusted values come back on `pollResult`. */
+    audioTracks?: BoardPauseAudioTrack[];
+}
+/** An audio track value reported back from a pause screen interaction. */
+export interface BoardPauseAudioTrackResult {
+    /** ID of the audio track (matches `BoardPauseAudioTrack.id`). */
+    id: string;
+    /** New volume value 0-100 after the user adjusted the slider. */
+    value: number;
+}
+/** Result from a pause screen action. */
+export interface BoardPauseResult {
+    /**
+     * Action identifier. Known system actions: "resume", "quit", "save_and_quit".
+     * For custom buttons, this is "custom_button" and the specific button is in `customButtonId`.
+     */
+    action: string;
+    /** ID of the custom button that was pressed, if `action` is "custom_button". */
+    customButtonId?: string;
+    /** Updated audio track values, if the user adjusted any sliders before dismissing the pause menu. */
+    audioTracks?: BoardPauseAudioTrackResult[];
+}
+/** Metadata for a saved game. */
+export interface BoardSaveGameMetadata {
+    /** Unique save ID generated by the OS. Use with `Board.save.load`, `.update`, `.delete`, `.loadCoverImage`. */
+    id: string;
+    /** Human-readable save name set by the game when the save was created or last updated. */
+    description: string;
+    /** Epoch millis when the save was first created. */
+    createdAt: number;
+    /** Epoch millis when the save was last updated. */
+    updatedAt: number;
+    /** Total played time in milliseconds, as reported by the game on create/update. */
+    playedTime: number;
+    /** Size of the save payload in bytes. */
+    fileSize: number;
+    /** Game version string the save was written under, as reported by the game on create/update. */
+    gameVersion: string;
+    /** Number of players associated with this save. */
+    playerCount: number;
+}
+//# sourceMappingURL=types.d.ts.map

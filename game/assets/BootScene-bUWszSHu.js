@@ -1,0 +1,1 @@
+import{Scene as o}from"./phaser-DMjGVukU.js";import{g as t}from"./GameToken-klUC69tR.js";import{S as r}from"./index-BzeOXxOZ.js";import"./react-vendor-_foh5iaC.js";class i extends o{constructor(){super({key:"Boot"})}preload(){for(const e of r)this.load.audio(e.key,e.url)}create(){t(this),this.scene.start("Game")}}export{i as BootScene};
