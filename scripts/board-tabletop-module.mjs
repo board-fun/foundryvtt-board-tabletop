@@ -17,18 +17,18 @@ const DEBUG = false;
 
 /**
  * Build tag for this module script. `deploy.sh` runs a global replace of the
- * `b502` placeholder with the deploy build number (e.g. "b364").
+ * `b504` placeholder with the deploy build number (e.g. "b364").
  * Logged at init and included in the boot diagnostics so we can confirm the
  * device is running the expected build.
  *
  * NOTE: the guard below intentionally tests the bare substring "MODULE_BUILD"
- * (no surrounding underscores) so the deploy `sed s|b502|...|g`
+ * (no surrounding underscores) so the deploy `sed s|b504|...|g`
  * does NOT rewrite it. Un-deployed: placeholder still contains it -> "dev".
  * Deployed: placeholder became e.g. "b364", no longer contains it -> "b364".
  */
-const MODULE_BUILD_VERSION = "b502".includes("MODULE_BUILD")
+const MODULE_BUILD_VERSION = "b504".includes("MODULE_BUILD")
   ? "dev"
-  : "b502";
+  : "b504";
 
 /** Exposed for Playtable boot probes before `collectBootSnapshot` exists. */
 if (typeof globalThis !== "undefined") {
@@ -496,7 +496,7 @@ function ensurePhaserGameRunning() {
 }
 
 /** Relative to `/modules/board-tabletop/game/` — deploy.sh rewrites the hash. */
-const PHASER_GAME_BUNDLE = "assets/index-BzeOXxOZ.js";
+const PHASER_GAME_BUNDLE = "assets/index-BKkDyjfC.js";
 const PHASER_GAME_STYLES = "assets/index-Df8zXMah.css";
 const PHASER_GAME_STYLES_LINK_ID = "board-phaser-game-styles";
 
